@@ -22,4 +22,10 @@ Research themes are introduced on the homepage and in `_pages/research.md`. Keep
 
 The current project site uses `url: https://traixthetroll.github.io` and `baseurl: /neuropia.github.io`. Use `relative_url` for internal links so the project prefix is preserved. Run `bundle exec jekyll build` with the configured base URL. Merging changes into `main` triggers the existing GitHub Pages deployment.
 
-Site-specific styles live in `assets/css/neuropia.css` and are loaded only by the homepage and People page. No gem-owned layout or include is overridden.
+Site-specific styles live in `assets/css/neuropia.css` and are loaded by all public pages. Include the same stylesheet when adding a page. No gem-owned layout or include is overridden.
+
+## Logo and palette
+
+`assets/img/neuropia-logo.png` is an unchanged copy of the group-supplied transparent PNG (`NEUROPIA vektor gjennomsiktig.png`, 3000 × 3000 pixels). It appears in the homepage introduction, beside the navigation brand on inner pages, and as the favicon. The original transparency and proportions are preserved.
+
+The site's accent colors come from the logo: navy `#0f2033`, teal `#2c7a77`, and warm gold `#facc8a`. Light mode uses teal links and accents; dark mode uses a navy background and gold accents. Color variables and responsive logo sizing are in `assets/css/neuropia.css`.

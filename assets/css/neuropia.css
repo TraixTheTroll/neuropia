@@ -1,4 +1,53 @@
-/* Site content styles. Base navigation, typography, and themes remain in al-folio. */
+/* Site styles layered over the al-folio theme. The group logo is used without edits. */
+/* Brand colors sampled from the original group logo. */
+:root {
+  --global-theme-color: #2c7a77;
+  --global-hover-color: #1e4351;
+  --global-text-color: #0f2033;
+  --neuropia-badge-text-color: #fff;
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #0f2033;
+  --global-card-bg-color: #193c4b;
+  --global-text-color: #edf2ef;
+  --global-theme-color: #facc8a;
+  --global-hover-color: #ffe2b5;
+  --global-hover-text-color: #0f2033;
+  --global-divider-color: #37535d;
+  --global-footer-bg-color: #0c1d32;
+  --global-footer-text-color: #edf2ef;
+  --global-footer-link-color: #facc8a;
+  --neuropia-badge-text-color: #0f2033;
+}
+
+.navbar-brand.title::before {
+  content: "";
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+  background: url("../img/neuropia-logo.png") center / contain no-repeat;
+}
+
+.publications .abbr abbr {
+  color: var(--neuropia-badge-text-color);
+}
+
+.neuropia-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  align-items: center;
+  gap: 2rem;
+}
+
+.neuropia-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .neuropia-lead {
   max-width: 44rem;
   font-size: clamp(1.25rem, 2.5vw, 1.65rem);
@@ -134,6 +183,17 @@
 }
 
 @media (max-width: 720px) {
+  .neuropia-intro {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .neuropia-logo {
+    grid-row: 1;
+    width: min(100%, 16rem);
+    justify-self: center;
+  }
+
   .neuropia-feature-grid {
     grid-template-columns: 1fr;
   }

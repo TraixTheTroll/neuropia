@@ -10,15 +10,22 @@ nav: false
 <link rel="stylesheet" href="{{ '/assets/css/neuropia.css' | relative_url }}">
 
 <div class="neuropia-home">
-  <p class="neuropia-lead">
-    Mesenchymal stem cells and extracellular vesicles in neurological disease.
-  </p>
-  <p>
-    Neuropia investigates the therapeutic potential of mesenchymal stem cells and extracellular vesicles,
-    with multiple sclerosis as our main disease focus. Our broader research interests include other
-    neurodegenerative disorders, such as Parkinson’s disease.
-  </p>
-  <p>We are based at Neuro-SysMed, Haukeland University Hospital, and the University of Bergen, Norway.</p>
+  <div class="neuropia-intro">
+    <div class="neuropia-intro-copy">
+      <p class="neuropia-lead">
+        Mesenchymal stem cells and extracellular vesicles in neurological disease.
+      </p>
+      <p>
+        Neuropia investigates the therapeutic potential of mesenchymal stem cells and extracellular vesicles,
+        with multiple sclerosis as our main disease focus. Our broader research interests include other
+        neurodegenerative disorders, such as Parkinson’s disease.
+      </p>
+      <p>We are based at Neuro-SysMed, Haukeland University Hospital, and the University of Bergen, Norway.</p>
+    </div>
+    <img class="neuropia-logo" src="{{ '/assets/img/neuropia-logo.png' | relative_url }}"
+      alt="Neuropia logo: a brain above mountains, surrounded by vesicle-like spheres"
+      width="3000" height="3000" loading="eager" decoding="async">
+  </div>
 
   <div class="neuropia-feature-grid">
     <a class="neuropia-feature" href="{{ '/research/' | relative_url }}">
