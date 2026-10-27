@@ -42,3 +42,10 @@
   image_width: 1310
   image_height: 1055
   role: Researcher
+- name: Anna-Maria Rasmussen Eitrheim
+  initials: AMRE
+  slug: anna-maria-rasmussen-eitrheim
+  image: people/amre.jpg
+  image_width: 435
+  image_height: 498
+  role: Master’s student
