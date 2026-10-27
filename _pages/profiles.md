@@ -1,28 +1,32 @@
 ---
-layout: profiles
+layout: page
 permalink: /people/
-title: people
-description: members of the lab or group
+title: People
+description: Current members of Neuropia
 nav: true
-nav_order: 7
-
-profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+nav_order: 1
 ---
+
+<link rel="stylesheet" href="{{ '/assets/css/neuropia.css' | relative_url }}">
+
+<ul class="neuropia-people-grid" aria-label="Current group members">
+  {% for member in site.data.members %}
+    <li class="neuropia-person">
+      {% if member.image %}
+        <img class="neuropia-avatar" src="{{ member.image | prepend: '/assets/img/' | relative_url }}" alt="{{ member.name | escape }}" width="88" height="88" loading="lazy">
+      {% else %}
+        <span class="neuropia-avatar neuropia-initials" aria-hidden="true">{{ member.initials | escape }}</span>
+      {% endif %}
+      <h2>{{ member.name | escape }}</h2>
+      {% if member.role %}<p class="neuropia-role">{{ member.role | escape }}</p>{% endif %}
+      {% if member.bio %}<p>{{ member.bio | escape }}</p>{% endif %}
+      {% if member.email or member.orcid or member.website %}
+        <ul class="neuropia-member-links" aria-label="Links for {{ member.name | escape }}">
+          {% if member.email %}<li><a href="mailto:{{ member.email | escape }}">Email</a></li>{% endif %}
+          {% if member.orcid %}<li><a href="https://orcid.org/{{ member.orcid | escape }}">ORCID</a></li>{% endif %}
+          {% if member.website %}<li><a href="{{ member.website | escape }}">Profile</a></li>{% endif %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
