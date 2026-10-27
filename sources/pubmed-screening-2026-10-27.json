@@ -1,0 +1,395 @@
+[
+  {
+    "pmid": "42497073",
+    "title": "DNAJC12 Stabilizes Phenylalanine Hydroxylase and Facilitates Its Substrate-Dependent Activation.",
+    "authors": [
+      "Mary Dayne S Tai",
+      "Trond-André Kråkenes",
+      "Gloria Gamiz-Arco",
+      "Christer F Didriksen",
+      "Juha P Kallio",
+      "Marte I Flydal",
+      "Fernando Moro",
+      "Aurora Martinez"
+    ],
+    "decision": "Excluded: Trond-André Kråkenes is a different individual from Torbjørn Kråkenes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42497073/"
+  },
+  {
+    "pmid": "42081777",
+    "title": "Intrathecal Mesenchymal Stem Cells in Progressive Multiple Sclerosis: A Randomized, Double-Blind, Placebo-Controlled Trial (SMART-MS).",
+    "authors": [
+      "Christopher Elnan Kvistad",
+      "Torbjørn Kråkenes",
+      "Trygve Holmøy",
+      "Live Egeland Eidem",
+      "Linn Steffensen",
+      "Kristin Wesnes",
+      "Markus Rojewski",
+      "Tom Eichele",
+      "Stig Wergeland",
+      "Sonia Gavasso",
+      "Harald Barsnes",
+      "Jörg Assmus",
+      "Niyaz Al-Sharabi",
+      "Samih Mohamed-Ahmed",
+      "Hugo Vrenken",
+      "Iman Brouwer",
+      "Henk-Jan Mm Mutsaerts",
+      "Mario Tranfa",
+      "Cecilie Gjerde",
+      "Marie Ytterdal",
+      "Eyvind Rødahl",
+      "Frode Steingrimsen Berven",
+      "Hubert Schrezenmeier",
+      "Kamal Mustafa",
+      "Lars Bø"
+    ],
+    "decision": "Selected: relevant to the stated group research scope",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42081777/"
+  },
+  {
+    "pmid": "42239508",
+    "title": "SOM3355: a unique pharmacological profile combining VMAT1 inhibition, VMAT2-mediated dopamine modulation, and β1-adrenergic antagonism for the treatment of movement and neuropsychiatric disorders.",
+    "authors": [
+      "Emily S Turilli-Ghisolfi",
+      "Svein Isungset Støve",
+      "Oscar Huertas",
+      "Trond-André Kråkenes",
+      "Knut Teigen",
+      "Silvia Panigone",
+      "Rossella Medori"
+    ],
+    "decision": "Excluded: Trond-André Kråkenes is a different individual from Torbjørn Kråkenes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42239508/"
+  },
+  {
+    "pmid": "42008439",
+    "title": "The neural transdifferentiation potential of bone marrow mesenchymal stem cells.",
+    "authors": ["Marie Ytterdal", "Casper Eugen Sandvik", "Trygve Holmøy", "Lars Bø", "Christopher Elnan Kvistad", "Torbjørn Kråkenes"],
+    "decision": "Selected: relevant to the stated group research scope",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42008439/"
+  },
+  {
+    "pmid": "41360194",
+    "title": "Association between blood pressure and outcome in patients with acute ischemic stroke treated with alteplase.",
+    "authors": [
+      "Ole Morten Rønning",
+      "Linn Nordby",
+      "Nicola Logallo",
+      "Christopher E Kvistad",
+      "Espen Saxhaug Kristoffersen",
+      "Håkon Ihle-Hansen",
+      "Hege Ihle-Hansen",
+      "Vojtech Novotny",
+      "Ulrike Waje-Andreassen",
+      "Halvor Næss",
+      "Lars Thomassen",
+      "Bente Thommessen"
+    ],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41360194/"
+  },
+  {
+    "pmid": "40589765",
+    "title": "Brain-derived blood biomarkers in multiple sclerosis-current trends and beyond.",
+    "authors": [
+      "Shamundeeswari Anandan",
+      "Karina Maciak",
+      "Regina Breinbauer",
+      "Sepideh Mostafavi",
+      "Christopher Elnan Kvistad",
+      "Oivind Torkildsen",
+      "Kjell-Morten Myhr"
+    ],
+    "decision": "Selected: relevant to the stated group research scope",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40589765/"
+  },
+  {
+    "pmid": "38971517",
+    "title": "The cytoplasmic tail of myelin protein zero induces morphological changes in lipid membranes.",
+    "authors": [
+      "Oda C Krokengen",
+      "Christine Touma",
+      "Anna Mularski",
+      "Aleksi Sutinen",
+      "Ryan Dunkel",
+      "Marie Ytterdal",
+      "Arne Raasakka",
+      "Haydyn D T Mertens",
+      "Adam Cohen Simonsen",
+      "Petri Kursula"
+    ],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38971517/"
+  },
+  {
+    "pmid": "39408622",
+    "title": "The Therapeutic Potential of Exosomes from Mesenchymal Stem Cells in Multiple Sclerosis.",
+    "authors": [
+      "Torbjørn Kråkenes",
+      "Casper Eugen Sandvik",
+      "Marie Ytterdal",
+      "Sonia Gavasso",
+      "Elisabeth Claire Evjenth",
+      "Lars Bø",
+      "Christopher Elnan Kvistad"
+    ],
+    "decision": "Selected: relevant to the stated group research scope",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39408622/"
+  },
+  {
+    "pmid": "38972617",
+    "title": "Prolonged and repeated microemboli detection in acute ischemic stroke - The Norwegian Microemboli in Acute Stroke Study (NOR-MASS).",
+    "authors": ["Sander Johan Aarli", "Lars Thomassen", "Nicola Logallo", "Christopher Elnan Kvistad", "Halvor Næss", "Annette Fromm"],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38972617/"
+  },
+  {
+    "pmid": "38802745",
+    "title": "Multi-omics profiling reveals dysregulated ribosome biogenesis and impaired cell proliferation following knockout of CDR2L.",
+    "authors": [
+      "Eirik Tveit Solheim",
+      "Yola Gerking",
+      "Torbjørn Kråkenes",
+      "Ida Herdlevær",
+      "Even Birkeland",
+      "Cecilie Totland",
+      "Fiona Dick",
+      "Christian Alexander Vedeler"
+    ],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38802745/"
+  },
+  {
+    "pmid": "38904024",
+    "title": "Activation of Neurotoxic Astrocytes Due to Mitochondrial Dysfunction Triggered by POLG Mutation.",
+    "authors": [
+      "Kristina Xiao Liang",
+      "Anbin Chen",
+      "Atefeh Kianian",
+      "Cecilie Katrin Kristiansen",
+      "Tsering Yangzom",
+      "Jessica Furriol",
+      "Lena Elise Høyland",
+      "Mathias Ziegler",
+      "Torbjørn Kråkenes",
+      "Charalampos Tzoulis",
+      "Evandro Fei Fang",
+      "Gareth John Sullivan",
+      "Laurence A Bindoff"
+    ],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38904024/"
+  },
+  {
+    "pmid": "38803647",
+    "title": "Neural regeneration in the human central nervous system-from understanding the underlying mechanisms to developing treatments. Where do we stand today?",
+    "authors": ["Christopher Elnan Kvistad", "Torbjørn Kråkenes", "Sonia Gavasso", "Lars Bø"],
+    "decision": "Selected: relevant to the stated group research scope",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38803647/"
+  },
+  {
+    "pmid": "38345003",
+    "title": "Autologous hematopoietic stem cell transplantation for multiple sclerosis: Long-term follow-up data from Norway.",
+    "authors": [
+      "Christopher Elnan Kvistad",
+      "Anne Kristine Lehmann",
+      "Silje Agnethe Stokke Kvistad",
+      "Trygve Holmøy",
+      "Åslaug Rudjord Lorentzen",
+      "Linn Hereide Trovik",
+      "Einar Klæboe Kristoffersen",
+      "Lars Bø",
+      "Øivind Torkildsen"
+    ],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38345003/"
+  },
+  {
+    "pmid": "36626013",
+    "title": "Development and Optimization of a Multilayer Rat Purkinje Neuron Culture.",
+    "authors": ["Ida Margrethe Uggerud", "Torbjørn Kråkenes", "Hirokazu Hirai", "Christian Alexander Vedeler", "Manja Schubert"],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36626013/"
+  },
+  {
+    "pmid": "38338644",
+    "title": "The Therapeutic Mechanisms of Mesenchymal Stem Cells in MS-A Review Focusing on Neuroprotective Properties.",
+    "authors": [
+      "Sonia Gavasso",
+      "Torbjørn Kråkenes",
+      "Håkon Olsen",
+      "Elisabeth Claire Evjenth",
+      "Marie Ytterdal",
+      "Jonas Bull Haugsøen",
+      "Christopher Elnan Kvistad"
+    ],
+    "decision": "Selected: relevant to the stated group research scope",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38338644/"
+  },
+  {
+    "pmid": "37968581",
+    "title": "Characteristics and predictors of stroke mimics in young patients in the norwegian tenecteplase stroke trial (NOR-TEST).",
+    "authors": ["Eskil Jacobsen", "Nicola Logallo", "Christopher Elnan Kvistad", "Lars Thomassen", "Titto Idicula"],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37968581/"
+  },
+  {
+    "pmid": "37943848",
+    "title": "The neuroprotective potential of mesenchymal stem cells from bone marrow and human exfoliated deciduous teeth in a murine model of demyelination.",
+    "authors": [
+      "Torbjørn Kråkenes",
+      "Stig Wergeland",
+      "Niyaz Al-Sharabi",
+      "Samih Mohamed-Ahmed",
+      "Siren Fromreide",
+      "Daniela-Elana Costea",
+      "Kamal Mustafa",
+      "Lars Bø",
+      "Christopher Elnan Kvistad"
+    ],
+    "decision": "Selected: relevant to the stated group research scope",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37943848/"
+  },
+  {
+    "pmid": "37830342",
+    "title": "Tenecteplase, 0.4 mg/kg, in Moderate and Severe Acute Ischemic Stroke: A Pooled Analysis of NOR-TEST and NOR-TEST 2A.",
+    "authors": [
+      "Vojtech Novotny",
+      "Christopher Elnan Kvistad",
+      "Halvor Naess",
+      "Nicola Logallo",
+      "Annette Fromm",
+      "Andrej Netland Khanevski",
+      "Lars Thomassen"
+    ],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37830342/"
+  },
+  {
+    "pmid": "35525250",
+    "title": "Tenecteplase versus alteplase for the management of acute ischaemic stroke in Norway (NOR-TEST 2, part A): a phase 3, randomised, open-label, blinded endpoint, non-inferiority trial.",
+    "authors": [
+      "Christopher Elnan Kvistad",
+      "Halvor Næss",
+      "Bernt H Helleberg",
+      "Titto Idicula",
+      "Guri Hagberg",
+      "Linn Marie Nordby",
+      "Kristian N Jenssen",
+      "Håkon Tobro",
+      "Dag M Rörholt",
+      "Kamaljit Kaur",
+      "Agnethe Eltoft",
+      "Kristin Evensen",
+      "Judit Haasz",
+      "Guruparan Singaravel",
+      "Annette Fromm",
+      "Lars Thomassen"
+    ],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35525250/"
+  },
+  {
+    "pmid": "35711260",
+    "title": "Safety and Clinical Efficacy of Mesenchymal Stem Cell Treatment in Traumatic Spinal Cord Injury, Multiple Sclerosis and Ischemic Stroke - A Systematic Review and Meta-Analysis.",
+    "authors": ["Christopher Elnan Kvistad", "Torbjørn Kråkenes", "Cecilie Gjerde", "Kamal Mustafa", "Tiina Rekand", "Lars Bø"],
+    "decision": "Selected: relevant to the stated group research scope",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35711260/"
+  },
+  {
+    "pmid": "34564893",
+    "title": "Sex differences in the Norwegian Tenecteplase Trial (NOR-TEST).",
+    "authors": [
+      "Håkon Ihle-Hansen",
+      "Else Charlotte Sandset",
+      "Hege Ihle-Hansen",
+      "Guri Hagberg",
+      "Bente Thommessen",
+      "Ole Morten Rønning",
+      "Christopher Elnan Kvistad",
+      "Vojtech Novotny",
+      "Halvor Naess",
+      "Ulrike Waje-Andreassen",
+      "Lars Thomassen",
+      "Nicola Logallo"
+    ],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34564893/"
+  },
+  {
+    "pmid": "34823119",
+    "title": "Expression of cerebellar degeneration-related proteins CDR2 and CDR2L in human and rat brain tissue.",
+    "authors": ["Margrethe Raspotnig", "Torbjørn Kråkenes", "Ida Herdlevær", "Mette Haugen", "Christian Vedeler"],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34823119/"
+  },
+  {
+    "pmid": "35013193",
+    "title": "Structural mechanism for tyrosine hydroxylase inhibition by dopamine and reactivation by Ser40 phosphorylation.",
+    "authors": [
+      "María Teresa Bueno-Carrasco",
+      "Jorge Cuéllar",
+      "Marte I Flydal",
+      "César Santiago",
+      "Trond-André Kråkenes",
+      "Rune Kleppe",
+      "José R López-Blanco",
+      "Miguel Marcilla",
+      "Knut Teigen",
+      "Sara Alvira",
+      "Pablo Chacón",
+      "Aurora Martinez",
+      "José M Valpuesta"
+    ],
+    "decision": "Excluded: Trond-André Kråkenes is a different individual from Torbjørn Kråkenes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35013193/"
+  },
+  {
+    "pmid": "34489850",
+    "title": "The Course of Carotid Plaque Vulnerability Assessed by Advanced Neurosonology.",
+    "authors": [
+      "Sander Johan Aarli",
+      "Lars Thomassen",
+      "Ulrike Waje-Andreassen",
+      "Nicola Logallo",
+      "Christopher Elnan Kvistad",
+      "Halvor Næss",
+      "Annette Fromm"
+    ],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34489850/"
+  },
+  {
+    "pmid": "33309753",
+    "title": "Levalbuterol lowers the feedback inhibition by dopamine and delays misfolding and aggregation in tyrosine hydroxylase.",
+    "authors": ["Marte I Flydal", "Trond-André Kråkenes", "Mary Dayne S Tai", "Maria P A Tran", "Knut Teigen", "Aurora Martinez"],
+    "decision": "Excluded: Trond-André Kråkenes is a different individual from Torbjørn Kråkenes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33309753/"
+  },
+  {
+    "pmid": "32631157",
+    "title": "Tenecteplase versus alteplase after acute ischemic stroke at high age.",
+    "authors": [
+      "Bente Thommessen",
+      "Halvor Næss",
+      "Nicola Logallo",
+      "Christopher E Kvistad",
+      "Ulrike Waje-Andreassen",
+      "Hege Ihle-Hansen",
+      "Håkon Ihle-Hansen",
+      "Lars Thomassen",
+      "Ole Morten Rønning"
+    ],
+    "decision": "Not selected: outside this focused MSC/EV/neural-regeneration selection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32631157/"
+  },
+  {
+    "pmid": "33417459",
+    "title": "Relevance of Electrostatics for the Interaction of Tyrosine Hydroxylase with Porous Silicon Nanoparticles.",
+    "authors": ["Maria T Bezem", "Fredrik G Johannessen", "Trond-André Kråkenes", "Michael J Sailor", "Aurora Martinez"],
+    "decision": "Excluded: Trond-André Kråkenes is a different individual from Torbjørn Kråkenes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33417459/"
+  }
+]

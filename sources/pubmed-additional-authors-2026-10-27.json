@@ -1,0 +1,12 @@
+{
+  "header": { "type": "esearch", "version": "0.3" },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [],
+    "querytranslation": "\"Gremes Andrea\"[Author] OR \"Gremes A\"[Author] OR \"Gronas Christian\"[Author] OR \"Gronas C\"[Author] OR \"Gronas Christian\"[Author] OR \"Gronas C\"[Author]",
+    "warninglist": { "phrasesignored": [], "quotedphrasesnotfound": [], "outputmessages": ["No items found."] }
+  }
+}

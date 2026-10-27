@@ -1,0 +1,44 @@
+{
+  "header": { "type": "esearch", "version": "0.3" },
+  "esearchresult": {
+    "count": "27",
+    "retmax": "27",
+    "retstart": "0",
+    "idlist": [
+      "42497073",
+      "42081777",
+      "42239508",
+      "42008439",
+      "41360194",
+      "40589765",
+      "38971517",
+      "39408622",
+      "38972617",
+      "38802745",
+      "38904024",
+      "38803647",
+      "38345003",
+      "36626013",
+      "38338644",
+      "37968581",
+      "37943848",
+      "37830342",
+      "35525250",
+      "35711260",
+      "34564893",
+      "34823119",
+      "35013193",
+      "34489850",
+      "33309753",
+      "32631157",
+      "33417459"
+    ],
+    "translationset": [
+      { "from": "Kvistad CE[Author]", "to": "Kvistad, Ce[Full Author Name] OR kvistad ce[Author]" },
+      { "from": "Krakenes T[Author]", "to": "krakenes t[Author]" },
+      { "from": "Ytterdal M[Author]", "to": "ytterdal m[Author]" },
+      { "from": "Sandvik CE[Author]", "to": "Sandvik, Ce[Full Author Name] OR sandvik ce[Author]" }
+    ],
+    "querytranslation": "(kvistad, ce[Author] OR kvistad ce[Author] OR krakenes t[Author] OR ytterdal m[Author] OR (sandvik, ce[Author] OR sandvik ce[Author]) OR (\"Gremes\"[All Fields] AND A[Author]) OR (\"Gronas\"[All Fields] AND C[Author])) AND 2021/01/01:2026/10/27[Date - Publication]"
+  }
+}

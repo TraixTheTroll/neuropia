@@ -1,0 +1,20 @@
+# Current members, in the order supplied by the group.
+# Optional fields: role, bio, image (under assets/img/), email, orcid, website.
+- name: Christopher Elnan Kvistad
+  initials: CK
+  role: Principal investigator
+- name: Torbjørn Kråkenes
+  initials: TK
+  role: Senior researcher
+- name: Marie Ytterdal
+  initials: MY
+  role: PhD candidate
+- name: Casper Eugen Sandvik
+  initials: CS
+  role: PhD candidate
+- name: Andrea Gremes
+  initials: AG
+  role: Researcher
+- name: Christian Grønås
+  initials: CG
+  role: Researcher
