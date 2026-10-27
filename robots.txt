@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://traixthetroll.github.io/neuropia.github.io/sitemap.xml
+Sitemap: https://traixthetroll.github.io/neuropia/sitemap.xml
