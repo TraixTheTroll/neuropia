@@ -21,6 +21,11 @@ html[data-theme="dark"] {
   --neuropia-badge-text-color: #0f2033;
 }
 
+.post-header .post-title,
+.navbar-brand.title {
+  font-weight: 700;
+}
+
 .navbar-brand.title::before {
   content: "";
   display: inline-block;
@@ -144,6 +149,29 @@ html[data-theme="dark"] {
   background: var(--global-card-bg-color, var(--global-bg-color));
 }
 
+.neuropia-person-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: var(--global-text-color);
+}
+
+.neuropia-person-link:hover,
+.neuropia-person-link:focus-visible {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.neuropia-person-link:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 6px;
+}
+
+.neuropia-person:focus-within,
+.neuropia-person:hover {
+  border-color: var(--global-theme-color);
+}
+
 .neuropia-avatar {
   display: flex;
   width: 88px;
@@ -152,6 +180,13 @@ html[data-theme="dark"] {
   border: 1px solid var(--global-divider-color);
   border-radius: 50%;
   object-fit: cover;
+}
+
+img.neuropia-avatar {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 0.2rem;
 }
 
 .neuropia-initials {
@@ -182,7 +217,41 @@ html[data-theme="dark"] {
   list-style: none;
 }
 
+.neuropia-member-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 2.5rem;
+  margin-block: 2rem;
+}
+
+.neuropia-profile-figure {
+  margin: 0;
+}
+
+.neuropia-profile-photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+.neuropia-profile-figure figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.neuropia-profile-role {
+  font-weight: 600;
+  color: var(--global-theme-color);
+}
+
 @media (max-width: 720px) {
+  .neuropia-member-profile {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
   .neuropia-intro {
     grid-template-columns: 1fr;
     gap: 1rem;

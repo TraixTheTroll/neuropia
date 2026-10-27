@@ -2,19 +2,43 @@
 # Optional fields: role, bio, image (under assets/img/), email, orcid, website.
 - name: Christopher Elnan Kvistad
   initials: CK
+  slug: christopher-elnan-kvistad
+  image: people/cek.jpg
+  image_width: 640
+  image_height: 640
   role: Principal investigator
 - name: Torbjørn Kråkenes
   initials: TK
+  slug: torbjorn-krakenes
+  image: people/tk.jpg
+  image_width: 640
+  image_height: 640
   role: Senior researcher
 - name: Marie Ytterdal
   initials: MY
+  slug: marie-ytterdal
+  image: people/my.jpg
+  image_width: 415
+  image_height: 739
   role: PhD candidate
 - name: Casper Eugen Sandvik
   initials: CS
+  slug: casper-eugen-sandvik
+  image: people/ces.jpg
+  image_width: 680
+  image_height: 680
   role: PhD candidate
 - name: Andrea Gremes
   initials: AG
+  slug: andrea-gremes
+  image: people/ag.jpg
+  image_width: 519
+  image_height: 519
   role: Researcher
 - name: Christian Grønås
   initials: CG
+  slug: christian-gronas
+  image: people/cg.jpg
+  image_width: 1310
+  image_height: 1055
   role: Researcher
