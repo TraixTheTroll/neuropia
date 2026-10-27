@@ -4,7 +4,7 @@ permalink: /contact/
 title: Contact
 description: Affiliations and location
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 Neuropia is based in Bergen, Norway, with the following affiliations.

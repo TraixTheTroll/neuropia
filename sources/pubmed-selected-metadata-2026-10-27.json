@@ -1,0 +1,687 @@
+[
+  {
+    "pmid": "42081777",
+    "title": "Intrathecal Mesenchymal Stem Cells in Progressive Multiple Sclerosis: A Randomized, Double-Blind, Placebo-Controlled Trial (SMART-MS).",
+    "journal": "Neurology",
+    "journal_abbreviation": "Neurology",
+    "volume": "106",
+    "issue": "10",
+    "pages": "e214915",
+    "journal_date": {
+      "Year": "2026",
+      "Month": "May",
+      "Day": "26"
+    },
+    "article_date": [
+      {
+        "Year": "2026",
+        "Month": "05",
+        "Day": "04"
+      }
+    ],
+    "authors": [
+      {
+        "family": "Kvistad",
+        "given": "Christopher Elnan",
+        "affiliations": ["Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Kråkenes",
+        "given": "Torbjørn",
+        "affiliations": ["Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Holmøy",
+        "given": "Trygve",
+        "affiliations": [
+          "Department of Neurology, Akershus University Hospital, Lørenskog, Norway.",
+          "Institute of Clinical Medicine, University of Oslo, Norway."
+        ]
+      },
+      {
+        "family": "Eidem",
+        "given": "Live Egeland",
+        "affiliations": ["Research Department, Stavanger University Hospital, Norway."]
+      },
+      {
+        "family": "Steffensen",
+        "given": "Linn",
+        "affiliations": ["Department of Neurology, University Hospital of North Norway (UNN), Tromsø, Norway."]
+      },
+      {
+        "family": "Wesnes",
+        "given": "Kristin",
+        "affiliations": ["Department of Neurology, St. Olavs Hospital, Trondheim, Norway."]
+      },
+      {
+        "family": "Rojewski",
+        "given": "Markus",
+        "affiliations": [
+          "Institute of Transfusion Medicine, University of Ulm and Institute of Clinical Transfusion Medicine and Immunogenetics Ulm, Red Cross Blood Transfusion Service Baden-Württemberg-Hessen and University Hospital Ulm, Ulm, Germany."
+        ]
+      },
+      {
+        "family": "Eichele",
+        "given": "Tom",
+        "affiliations": ["Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Wergeland",
+        "given": "Stig",
+        "affiliations": [
+          "Department of Neurology, Haukeland University Hospital, Bergen, Norway.",
+          "Department of Clinical Medicine, University of Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Gavasso",
+        "given": "Sonia",
+        "affiliations": ["Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Barsnes",
+        "given": "Harald",
+        "affiliations": [
+          "Proteomics Unit, Department of Biomedicine, University of Bergen, Norway.",
+          "Computational Biology Unit, Department of Informatics, University of Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Assmus",
+        "given": "Jörg",
+        "affiliations": ["Centre for Clinical Research, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Al-Sharabi",
+        "given": "Niyaz",
+        "affiliations": ["Department of Clinical Dentistry, University of Bergen, Norway."]
+      },
+      {
+        "family": "Mohamed-Ahmed",
+        "given": "Samih",
+        "affiliations": ["Department of Clinical Dentistry, University of Bergen, Norway."]
+      },
+      {
+        "family": "Vrenken",
+        "given": "Hugo",
+        "affiliations": ["MS Center, Amsterdam, the Netherlands.", "Amsterdam Neuroscience, Amsterdam, the Netherlands; and."]
+      },
+      {
+        "family": "Brouwer",
+        "given": "Iman",
+        "affiliations": ["MS Center, Amsterdam, the Netherlands.", "Amsterdam Neuroscience, Amsterdam, the Netherlands; and."]
+      },
+      {
+        "family": "Mutsaerts",
+        "given": "Henk-Jan Mm",
+        "affiliations": ["MS Center, Amsterdam, the Netherlands."]
+      },
+      {
+        "family": "Tranfa",
+        "given": "Mario",
+        "affiliations": ["MS Center, Amsterdam, the Netherlands."]
+      },
+      {
+        "family": "Gjerde",
+        "given": "Cecilie",
+        "affiliations": ["Department of Clinical Dentistry, University of Bergen, Norway."]
+      },
+      {
+        "family": "Ytterdal",
+        "given": "Marie",
+        "affiliations": ["Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Rødahl",
+        "given": "Eyvind",
+        "affiliations": [
+          "Department of Clinical Medicine, University of Bergen, Norway.",
+          "Department of Ophthalmology, Haukeland University Hospital, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Berven",
+        "given": "Frode Steingrimsen",
+        "affiliations": ["Proteomics Unit, Department of Biomedicine, University of Bergen, Norway."]
+      },
+      {
+        "family": "Schrezenmeier",
+        "given": "Hubert",
+        "affiliations": [
+          "Institute of Transfusion Medicine, University of Ulm and Institute of Clinical Transfusion Medicine and Immunogenetics Ulm, Red Cross Blood Transfusion Service Baden-Württemberg-Hessen and University Hospital Ulm, Ulm, Germany."
+        ]
+      },
+      {
+        "family": "Mustafa",
+        "given": "Kamal",
+        "affiliations": ["Department of Clinical Dentistry, University of Bergen, Norway."]
+      },
+      {
+        "family": "Bø",
+        "given": "Lars",
+        "affiliations": [
+          "Department of Neurology, Haukeland University Hospital, Bergen, Norway.",
+          "Department of Clinical Medicine, University of Bergen, Norway."
+        ]
+      }
+    ],
+    "ids": {
+      "pubmed": "42081777",
+      "pmc": "PMC13148372",
+      "doi": "10.1212/WNL.0000000000214915"
+    },
+    "types": ["Journal Article", "Randomized Controlled Trial", "Clinical Trial, Phase II", "Clinical Trial, Phase I", "Multicenter Study"],
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42081777/"
+  },
+  {
+    "pmid": "42008439",
+    "title": "The neural transdifferentiation potential of bone marrow mesenchymal stem cells.",
+    "journal": "PloS one",
+    "journal_abbreviation": "PLoS One",
+    "volume": "21",
+    "issue": "4",
+    "pages": "e0347119",
+    "journal_date": {
+      "Year": "2026"
+    },
+    "article_date": [
+      {
+        "Year": "2026",
+        "Month": "04",
+        "Day": "20"
+      }
+    ],
+    "authors": [
+      {
+        "family": "Ytterdal",
+        "given": "Marie",
+        "affiliations": [
+          "Department of Clinical Medicine, Faculty of Medicine, University of Bergen, Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Sandvik",
+        "given": "Casper Eugen",
+        "affiliations": ["Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Holmøy",
+        "given": "Trygve",
+        "affiliations": [
+          "Department of Neurology, Akershus University Hospital, Lørenskog, Norway.",
+          "Institute of Clinical Medicine, University of Oslo, Oslo, Norway."
+        ]
+      },
+      {
+        "family": "Bø",
+        "given": "Lars",
+        "affiliations": [
+          "Department of Clinical Medicine, Faculty of Medicine, University of Bergen, Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Kvistad",
+        "given": "Christopher Elnan",
+        "affiliations": ["Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Kråkenes",
+        "given": "Torbjørn",
+        "affiliations": [
+          "Department of Clinical Medicine, Faculty of Medicine, University of Bergen, Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."
+        ]
+      }
+    ],
+    "ids": {
+      "pubmed": "42008439",
+      "pmc": "PMC13094960",
+      "doi": "10.1371/journal.pone.0347119",
+      "pii": "PONE-D-25-55478"
+    },
+    "types": ["Journal Article"],
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42008439/"
+  },
+  {
+    "pmid": "40589765",
+    "title": "Brain-derived blood biomarkers in multiple sclerosis-current trends and beyond.",
+    "journal": "Frontiers in immunology",
+    "journal_abbreviation": "Front Immunol",
+    "volume": "16",
+    "issue": null,
+    "pages": "1569503",
+    "journal_date": {
+      "Year": "2025"
+    },
+    "article_date": [
+      {
+        "Year": "2025",
+        "Month": "06",
+        "Day": "16"
+      }
+    ],
+    "authors": [
+      {
+        "family": "Anandan",
+        "given": "Shamundeeswari",
+        "affiliations": [
+          "Department of Clinical Medicine, University of Bergen, Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Maciak",
+        "given": "Karina",
+        "affiliations": ["Department of General Biochemistry, Faculty of Biology and Environmental Protection, University of Lodz, Lodz, Poland."]
+      },
+      {
+        "family": "Breinbauer",
+        "given": "Regina",
+        "affiliations": ["Faculty of Medicine, Friedrich-Alexander-University Erlangen-Nuremberg (FAU), Erlangen, Germany."]
+      },
+      {
+        "family": "Mostafavi",
+        "given": "Sepideh",
+        "affiliations": ["Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Kvistad",
+        "given": "Christopher Elnan",
+        "affiliations": ["Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Torkildsen",
+        "given": "Oivind",
+        "affiliations": [
+          "Department of Clinical Medicine, University of Bergen, Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Myhr",
+        "given": "Kjell-Morten",
+        "affiliations": [
+          "Department of Clinical Medicine, University of Bergen, Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."
+        ]
+      }
+    ],
+    "ids": {
+      "pubmed": "40589765",
+      "pmc": "PMC12206755",
+      "doi": "10.3389/fimmu.2025.1569503"
+    },
+    "types": ["Journal Article", "Review"],
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40589765/"
+  },
+  {
+    "pmid": "39408622",
+    "title": "The Therapeutic Potential of Exosomes from Mesenchymal Stem Cells in Multiple Sclerosis.",
+    "journal": "International journal of molecular sciences",
+    "journal_abbreviation": "Int J Mol Sci",
+    "volume": "25",
+    "issue": "19",
+    "pages": "10292",
+    "journal_date": {
+      "Year": "2024",
+      "Month": "Sep",
+      "Day": "24"
+    },
+    "article_date": [
+      {
+        "Year": "2024",
+        "Month": "09",
+        "Day": "24"
+      }
+    ],
+    "authors": [
+      {
+        "family": "Kråkenes",
+        "given": "Torbjørn",
+        "affiliations": ["Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway."]
+      },
+      {
+        "family": "Sandvik",
+        "given": "Casper Eugen",
+        "affiliations": ["Department of Clinical Medicine, Faculty of Medicine, University of Bergen, 5021 Bergen, Norway."]
+      },
+      {
+        "family": "Ytterdal",
+        "given": "Marie",
+        "affiliations": ["Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway."]
+      },
+      {
+        "family": "Gavasso",
+        "given": "Sonia",
+        "affiliations": [
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway.",
+          "Department of Clinical Medicine, Faculty of Medicine, University of Bergen, 5021 Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Evjenth",
+        "given": "Elisabeth Claire",
+        "affiliations": ["Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway."]
+      },
+      {
+        "family": "Bø",
+        "given": "Lars",
+        "affiliations": [
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway.",
+          "Department of Clinical Medicine, Faculty of Medicine, University of Bergen, 5021 Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Kvistad",
+        "given": "Christopher Elnan",
+        "affiliations": ["Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway."]
+      }
+    ],
+    "ids": {
+      "pubmed": "39408622",
+      "pmc": "PMC11477223",
+      "doi": "10.3390/ijms251910292",
+      "pii": "ijms251910292"
+    },
+    "types": ["Journal Article", "Review"],
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39408622/"
+  },
+  {
+    "pmid": "38803647",
+    "title": "Neural regeneration in the human central nervous system-from understanding the underlying mechanisms to developing treatments. Where do we stand today?",
+    "journal": "Frontiers in neurology",
+    "journal_abbreviation": "Front Neurol",
+    "volume": "15",
+    "issue": null,
+    "pages": "1398089",
+    "journal_date": {
+      "Year": "2024"
+    },
+    "article_date": [
+      {
+        "Year": "2024",
+        "Month": "05",
+        "Day": "09"
+      }
+    ],
+    "authors": [
+      {
+        "family": "Kvistad",
+        "given": "Christopher Elnan",
+        "affiliations": ["Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Kråkenes",
+        "given": "Torbjørn",
+        "affiliations": ["Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Gavasso",
+        "given": "Sonia",
+        "affiliations": [
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway.",
+          "Department of Clinical Medicine, University of Bergen, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Bø",
+        "given": "Lars",
+        "affiliations": [
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway.",
+          "Department of Clinical Medicine, University of Bergen, Bergen, Norway."
+        ]
+      }
+    ],
+    "ids": {
+      "pubmed": "38803647",
+      "pmc": "PMC11129638",
+      "doi": "10.3389/fneur.2024.1398089"
+    },
+    "types": ["Journal Article", "Review"],
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38803647/"
+  },
+  {
+    "pmid": "38338644",
+    "title": "The Therapeutic Mechanisms of Mesenchymal Stem Cells in MS-A Review Focusing on Neuroprotective Properties.",
+    "journal": "International journal of molecular sciences",
+    "journal_abbreviation": "Int J Mol Sci",
+    "volume": "25",
+    "issue": "3",
+    "pages": "1365",
+    "journal_date": {
+      "Year": "2024",
+      "Month": "Jan",
+      "Day": "23"
+    },
+    "article_date": [
+      {
+        "Year": "2024",
+        "Month": "01",
+        "Day": "23"
+      }
+    ],
+    "authors": [
+      {
+        "family": "Gavasso",
+        "given": "Sonia",
+        "affiliations": [
+          "Department of Clinical Medicine, University of Bergen, 5009 Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Kråkenes",
+        "given": "Torbjørn",
+        "affiliations": [
+          "Department of Clinical Medicine, University of Bergen, 5009 Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Olsen",
+        "given": "Håkon",
+        "affiliations": [
+          "Department of Clinical Medicine, University of Bergen, 5009 Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Evjenth",
+        "given": "Elisabeth Claire",
+        "affiliations": [
+          "Department of Clinical Medicine, University of Bergen, 5009 Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Ytterdal",
+        "given": "Marie",
+        "affiliations": [
+          "Department of Clinical Medicine, University of Bergen, 5009 Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Haugsøen",
+        "given": "Jonas Bull",
+        "affiliations": [
+          "Department of Clinical Medicine, University of Bergen, 5009 Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Kvistad",
+        "given": "Christopher Elnan",
+        "affiliations": [
+          "Department of Clinical Medicine, University of Bergen, 5009 Bergen, Norway.",
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, 5021 Bergen, Norway."
+        ]
+      }
+    ],
+    "ids": {
+      "pubmed": "38338644",
+      "pmc": "PMC10855165",
+      "doi": "10.3390/ijms25031365",
+      "pii": "ijms25031365"
+    },
+    "types": ["Journal Article", "Review"],
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38338644/"
+  },
+  {
+    "pmid": "37943848",
+    "title": "The neuroprotective potential of mesenchymal stem cells from bone marrow and human exfoliated deciduous teeth in a murine model of demyelination.",
+    "journal": "PloS one",
+    "journal_abbreviation": "PLoS One",
+    "volume": "18",
+    "issue": "11",
+    "pages": "e0293908",
+    "journal_date": {
+      "Year": "2023"
+    },
+    "article_date": [
+      {
+        "Year": "2023",
+        "Month": "11",
+        "Day": "09"
+      }
+    ],
+    "authors": [
+      {
+        "family": "Kråkenes",
+        "given": "Torbjørn",
+        "affiliations": ["Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Wergeland",
+        "given": "Stig",
+        "affiliations": [
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway.",
+          "Department of Clinical Medicine, Faculty of Medicine, University of Bergen, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Al-Sharabi",
+        "given": "Niyaz",
+        "affiliations": [
+          "Tissue Engineering Group, Center of Translational Oral Research (TOR), Department of Clinical Dentistry, University of Bergen, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Mohamed-Ahmed",
+        "given": "Samih",
+        "affiliations": [
+          "Tissue Engineering Group, Center of Translational Oral Research (TOR), Department of Clinical Dentistry, University of Bergen, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Fromreide",
+        "given": "Siren",
+        "affiliations": [
+          "Center for Cancer Biomarkers CCBIO and Gades Laboratory for Pathology, Department of Clinical Medicine, Faculty of Medicine, University of Bergen, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Costea",
+        "given": "Daniela-Elana",
+        "affiliations": [
+          "Center for Cancer Biomarkers CCBIO and Gades Laboratory for Pathology, Department of Clinical Medicine, Faculty of Medicine, University of Bergen, Bergen, Norway.",
+          "Department of Pathology, Haukeland University Hospital, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Mustafa",
+        "given": "Kamal",
+        "affiliations": [
+          "Tissue Engineering Group, Center of Translational Oral Research (TOR), Department of Clinical Dentistry, University of Bergen, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Bø",
+        "given": "Lars",
+        "affiliations": [
+          "Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway.",
+          "Department of Clinical Medicine, Faculty of Medicine, University of Bergen, Bergen, Norway."
+        ]
+      },
+      {
+        "family": "Kvistad",
+        "given": "Christopher Elnan",
+        "affiliations": ["Neuro-SysMed, Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      }
+    ],
+    "ids": {
+      "pubmed": "37943848",
+      "pmc": "PMC10635499",
+      "doi": "10.1371/journal.pone.0293908",
+      "pii": "PONE-D-23-14013"
+    },
+    "types": ["Randomized Controlled Trial", "Journal Article", "Research Support, Non-U.S. Gov't"],
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37943848/"
+  },
+  {
+    "pmid": "35711260",
+    "title": "Safety and Clinical Efficacy of Mesenchymal Stem Cell Treatment in Traumatic Spinal Cord Injury, Multiple Sclerosis and Ischemic Stroke - A Systematic Review and Meta-Analysis.",
+    "journal": "Frontiers in neurology",
+    "journal_abbreviation": "Front Neurol",
+    "volume": "13",
+    "issue": null,
+    "pages": "891514",
+    "journal_date": {
+      "Year": "2022"
+    },
+    "article_date": [
+      {
+        "Year": "2022",
+        "Month": "05",
+        "Day": "30"
+      }
+    ],
+    "authors": [
+      {
+        "family": "Kvistad",
+        "given": "Christopher Elnan",
+        "affiliations": ["Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Kråkenes",
+        "given": "Torbjørn",
+        "affiliations": ["Department of Neurology, Haukeland University Hospital, Bergen, Norway."]
+      },
+      {
+        "family": "Gjerde",
+        "given": "Cecilie",
+        "affiliations": ["Tissue Engineering Group, Department of Clinical Dentistry, University of Bergen, Bergen, Norway."]
+      },
+      {
+        "family": "Mustafa",
+        "given": "Kamal",
+        "affiliations": ["Tissue Engineering Group, Department of Clinical Dentistry, University of Bergen, Bergen, Norway."]
+      },
+      {
+        "family": "Rekand",
+        "given": "Tiina",
+        "affiliations": [
+          "Department of Neurology, Haukeland University Hospital, Bergen, Norway.",
+          "Institute for Neuroscience and Physiology, University of Gothenburg, Gothenburg, Sweden."
+        ]
+      },
+      {
+        "family": "Bø",
+        "given": "Lars",
+        "affiliations": [
+          "Department of Neurology, Haukeland University Hospital, Bergen, Norway.",
+          "Department of Clinical Medicine, University of Bergen, Bergen, Norway."
+        ]
+      }
+    ],
+    "ids": {
+      "pubmed": "35711260",
+      "pmc": "PMC9196044",
+      "doi": "10.3389/fneur.2022.891514"
+    },
+    "types": ["Systematic Review", "Journal Article"],
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35711260/"
+  }
+]

@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-description: Neuropia research group in Bergen, Norway
+description: Mesenchymal stem cells and extracellular vesicles in neurological disease
 subtitle: Research group · Bergen, Norway
 nav: false
 ---
@@ -11,12 +11,22 @@ nav: false
 
 <div class="neuropia-home">
   <p class="neuropia-lead">
-    Neuropia brings together researchers affiliated with Neuro-SysMed, Haukeland University Hospital,
-    and the University of Bergen.
+    Mesenchymal stem cells and extracellular vesicles in neurological disease.
   </p>
-  <p>Meet the people in our group and follow our research outputs.</p>
+  <p>
+    Neuropia investigates the therapeutic potential of mesenchymal stem cells and extracellular vesicles,
+    with multiple sclerosis as our main disease focus. Our broader research interests include other
+    neurodegenerative disorders, such as Parkinson’s disease.
+  </p>
+  <p>We are based at Neuro-SysMed, Haukeland University Hospital, and the University of Bergen, Norway.</p>
 
   <div class="neuropia-feature-grid">
+    <a class="neuropia-feature" href="{{ '/research/' | relative_url }}">
+      <span class="neuropia-eyebrow">Our focus</span>
+      <h2>Research</h2>
+      <p>Cells, vesicles, and the path from laboratory studies to clinical research.</p>
+      <span class="neuropia-link-label">Explore our research <span aria-hidden="true">↗</span></span>
+    </a>
     <a class="neuropia-feature" href="{{ '/people/' | relative_url }}">
       <span class="neuropia-eyebrow">Our group</span>
       <h2>People</h2>

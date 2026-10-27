@@ -12,7 +12,10 @@
   gap: 1.5rem;
 }
 
-.neuropia-feature-grid,
+.neuropia-feature-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .neuropia-affiliation-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -22,7 +25,8 @@
 }
 
 .neuropia-feature {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 1.75rem;
   border: 1px solid var(--global-divider-color);
   border-top: 3px solid var(--global-theme-color);
@@ -57,7 +61,8 @@
 
 .neuropia-link-label {
   display: inline-block;
-  margin-top: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
   color: var(--global-theme-color);
 }
 
@@ -116,7 +121,7 @@
 
 .neuropia-role {
   margin-top: 0.5rem;
-  color: var(--global-text-color-light);
+  color: var(--global-text-color);
 }
 
 .neuropia-member-links {
@@ -129,6 +134,10 @@
 }
 
 @media (max-width: 720px) {
+  .neuropia-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
   .neuropia-people-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

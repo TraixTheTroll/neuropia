@@ -4,7 +4,7 @@ permalink: /people/
 title: People
 description: Current members of Neuropia
 nav: true
-nav_order: 1
+nav_order: 2
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/neuropia.css' | relative_url }}">

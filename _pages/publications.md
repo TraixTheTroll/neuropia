@@ -2,10 +2,12 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Research publications from Neuropia
+description: Selected publications by Neuropia members
 nav: true
-nav_order: 2
+nav_order: 3
 ---
+
+This selection covers mesenchymal stem cells, extracellular vesicles, multiple sclerosis, and neural regeneration. It includes clinical, laboratory, and review publications by current members, including collaborative work.
 
 {% capture group_publications %}{% bibliography %}{% endcapture %}
 {% assign publication_markup = group_publications | strip %}
