@@ -142,6 +142,8 @@ html[data-theme="dark"] {
 }
 
 .neuropia-person {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   padding: 1.5rem 1.15rem;
   border: 1px solid var(--global-divider-color);
@@ -152,7 +154,7 @@ html[data-theme="dark"] {
 .neuropia-person-link {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex: 1;
   color: var(--global-text-color);
 }
 
@@ -198,6 +200,15 @@ img.neuropia-avatar {
 .neuropia-role {
   margin-top: 0.5rem;
   color: var(--global-text-color);
+}
+
+.neuropia-member-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  margin-top: 1rem;
+  list-style: none;
 }
 
 .neuropia-member-profile {
