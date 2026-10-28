@@ -55,7 +55,7 @@ nav: false
     <div class="neuropia-affiliation-grid">
       {% for affiliation in site.data.affiliations %}
         <div>
-          <h3>{% if affiliation.url %}<a href="{{ affiliation.url | escape }}">{{ affiliation.name | escape }}</a>{% else %}{{ affiliation.name | escape }}{% endif %}</h3>
+          <h3>{{ affiliation.name | escape }}</h3>
           <p>{{ affiliation.department | escape }}<br>{{ affiliation.institution | escape }}<br>{{ affiliation.address | escape }}</p>
         </div>
       {% endfor %}

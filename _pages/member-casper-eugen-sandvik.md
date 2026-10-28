@@ -36,7 +36,6 @@ Casper holds a BSc in biomedicine from Høyskolen Kristiania in Oslo and an MSc 
 
 {% if member.email or member.linkedin or member.orcid or member.website %}
 <h2>Links</h2>
-{% if member.email %}<p class="neuropia-profile-email"><strong>Email:</strong> {{ member.email | escape }}</p>{% endif %}
 {% if member.linkedin or member.orcid or member.website %}
 <ul class="neuropia-member-links" aria-label="Links for {{ member.name | escape }}">
   {% if member.linkedin %}<li><a href="{{ member.linkedin | escape }}">LinkedIn</a></li>{% endif %}
@@ -44,6 +43,7 @@ Casper holds a BSc in biomedicine from Høyskolen Kristiania in Oslo and an MSc 
   {% if member.website %}<li><a href="{{ member.website | escape }}">Institutional profile</a></li>{% endif %}
 </ul>
 {% endif %}
+{% if member.email %}<p class="neuropia-profile-email"><strong>Email:</strong> <a href="mailto:{{ member.email | escape }}">{{ member.email | escape }}</a></p>{% endif %}
 {% endif %}
 
   </div>
