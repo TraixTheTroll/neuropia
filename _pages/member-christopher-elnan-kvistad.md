@@ -22,9 +22,17 @@ nav: false
   <div class="neuropia-profile-copy" markdown="1">
 <p class="neuropia-profile-role">{{ member.role | escape }}</p>
 
+**MD, PhD · Consultant neurologist · Associate professor**
+
 ## About
 
-A short biography and research interests will be added here.
+Christopher Elnan Kvistad is a consultant neurologist at Haukeland University Hospital and an associate professor at the University of Bergen, Norway. He co-leads Neuropia with Torbjørn Kråkenes. The group is dedicated to developing novel therapeutic strategies for neural repair and regeneration.
+
+His research focuses on translating experimental discoveries into clinical treatments for neurological diseases, particularly multiple sclerosis and Parkinson’s disease. His work includes clinical trials of regenerative therapies, as well as preclinical research involving mesenchymal stromal cells, extracellular vesicles, and emerging RNA-based technologies.
+
+He is the principal investigator of several investigator-initiated clinical studies, including SMART-MS and NORSEMAN-MS, and leads the development of novel extracellular vesicle-based treatment strategies.
+
+His overarching research goal is to develop therapies that promote repair of the damaged central nervous system and improve neurological function.
 
 {% if member.email or member.linkedin or member.orcid or member.website %}
 <h2>Links</h2>

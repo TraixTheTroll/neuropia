@@ -24,7 +24,7 @@ nav: false
 
 ## About
 
-A short biography and research interests will be added here.
+Torbjørn Kråkenes is a senior researcher and co-leads Neuropia with Christopher Elnan Kvistad. He is the principal investigator responsible for the group’s laboratory-based basic research.
 
 {% if member.email or member.linkedin or member.orcid or member.website %}
 <h2>Links</h2>
