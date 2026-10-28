@@ -27,7 +27,25 @@ nav: false
 
 ## About
 
-A short biography and research interests will be added here.
+Casper holds a BSc in biomedicine from Høyskolen Kristiania in Oslo and an MSc in biomedicine from the University of Bergen (UiB). Casper is currently pursuing a PhD at UiB.
+
+## Research interests
+
+- Small extracellular vesicles (sEVs)
+- Mesenchymal stem cells (MSCs)
+- Bioinformatics
+- Omics
+- Lipid nanoparticles (LNPs)
+
+{% if member.email or member.linkedin or member.orcid or member.website %}
+<h2>Links</h2>
+<ul class="neuropia-member-links" aria-label="Links for {{ member.name | escape }}">
+  {% if member.email %}<li><a href="mailto:{{ member.email | escape }}">Email</a></li>{% endif %}
+  {% if member.linkedin %}<li><a href="{{ member.linkedin | escape }}">LinkedIn</a></li>{% endif %}
+  {% if member.orcid %}<li><a href="https://orcid.org/{{ member.orcid | escape }}">ORCID</a></li>{% endif %}
+  {% if member.website %}<li><a href="{{ member.website | escape }}">Institutional profile</a></li>{% endif %}
+</ul>
+{% endif %}
 
   </div>
 </div>

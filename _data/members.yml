@@ -1,5 +1,5 @@
 # Current members, in the order supplied by the group.
-# Optional fields: role, bio, image (under assets/img/), email, orcid, website.
+# Optional fields: role, bio, image (under assets/img/), email, orcid, website, linkedin.
 - name: Christopher Elnan Kvistad
   initials: CK
   slug: christopher-elnan-kvistad
@@ -28,6 +28,9 @@
   image_width: 680
   image_height: 680
   role: PhD candidate
+  email: Casper.Sandvik@student.uib.no
+  linkedin: https://www.linkedin.com/in/casper-eugen-sandvik-585249258/
+  orcid: 0009-0002-5931-7670
 - name: Andrea Gremes
   initials: AG
   slug: andrea-gremes
@@ -49,3 +52,10 @@
   image_width: 435
   image_height: 498
   role: Master’s student
+- name: Lars Bø
+  initials: LB
+  slug: lars-bo
+  image: people/lb.jpg
+  image_width: 689
+  image_height: 394
+  role: Associated researcher

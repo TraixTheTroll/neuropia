@@ -25,9 +25,10 @@ nav_order: 2
         <span class="neuropia-link-label">View profile <span aria-hidden="true">↗</span></span>
       </a>
       {% if member.bio %}<p>{{ member.bio | escape }}</p>{% endif %}
-      {% if member.email or member.orcid or member.website %}
+      {% if member.email or member.orcid or member.website or member.linkedin %}
         <ul class="neuropia-member-links" aria-label="Links for {{ member.name | escape }}">
           {% if member.email %}<li><a href="mailto:{{ member.email | escape }}">Email</a></li>{% endif %}
+          {% if member.linkedin %}<li><a href="{{ member.linkedin | escape }}">LinkedIn</a></li>{% endif %}
           {% if member.orcid %}<li><a href="https://orcid.org/{{ member.orcid | escape }}">ORCID</a></li>{% endif %}
           {% if member.website %}<li><a href="{{ member.website | escape }}">Profile</a></li>{% endif %}
         </ul>

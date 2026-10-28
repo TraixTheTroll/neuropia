@@ -4,9 +4,11 @@ The website uses al-folio with group content stored separately from its example 
 
 ## Members
 
-Edit `_data/members.yml`. Entries appear in file order. Current roles were supplied by the group; individual affiliations are not assigned. Optional fields are `role`, `bio`, `image`, `email`, `orcid`, and `website`. Store photos under `assets/img/` and set `image` to the filename. Supply the bare ORCID identifier and a complete HTTPS URL for `website`. Initials appear when no photo is supplied. Current member images are in `assets/img/people/` and were converted from the supplied TIFFs to JPEG at their original pixel dimensions. The source TIFFs remain unchanged in the supplied folder.
+Edit `_data/members.yml`. Entries appear in file order. Current roles were supplied by the group; individual affiliations are not assigned. Optional fields are `role`, `bio`, `image`, `email`, `orcid`, `linkedin`, and `website`. Store photos under `assets/img/` and set `image` to the filename. Supply the bare ORCID identifier and complete HTTPS URLs for `linkedin` and `website`. Initials appear when no photo is supplied. Current member images are in `assets/img/people/` and were converted from the supplied TIFFs to JPEG at their original pixel dimensions. The source TIFFs remain unchanged in the supplied folder.
 
 Each member has a stable `slug` and an individual Markdown page at `_pages/member-<slug>.md`, published under `/people/<slug>/`. The People cards link to these pages. Edit the short About section on each page to replace its placeholder with a biography. Images and roles are read from `_data/members.yml`; profile pages preserve each image's full aspect ratio and provide a link to the full-resolution JPEG. Directory thumbnails use a square crop for a consistent grid.
+
+Member profiles use About, optional Research interests, and optional Links sections. Current work and per-person Selected publications sections are omitted. Casper’s page provides the first completed example. Email, LinkedIn, ORCID, and institutional profile links appear on the directory and individual profile when supplied in `_data/members.yml`; missing links are hidden.
 
 The main page headings and navigation brand use a bold font weight in `assets/css/neuropia.css`.
 
