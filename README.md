@@ -19,7 +19,7 @@ Research descriptions distinguish laboratory, animal-model, review, and clinical
 
 ## Website content
 
-The navigation contains **Home, Research, People, Publications, and Contact**. Each member has a clickable profile with a larger image and an editable biography. Casper’s profile includes a biography, research interests, and links; other biography sections currently contain placeholders.
+The navigation contains **Home, Research, People, Publications, and Contact**. Each member has a clickable profile with a larger image and an editable biography. Christopher’s and Casper’s profiles include biographies and contact details; Torbjørn’s profile introduces his basic research leadership. Other biographies currently contain placeholders.
 
 | Content                                             | Where to edit                                                  |
 | --------------------------------------------------- | -------------------------------------------------------------- |

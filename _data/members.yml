@@ -3,17 +3,18 @@
 - name: Christopher Elnan Kvistad
   initials: CK
   slug: christopher-elnan-kvistad
-  image: people/cek.jpg
-  image_width: 640
-  image_height: 640
-  role: Principal investigator
+  image: people/cek-updated-0bbd32ac.webp
+  image_width: 2560
+  image_height: 2860
+  role: Clinical principal investigator
+  email: christopher.elnan.kvistad@helse-bergen.no
 - name: Torbjørn Kråkenes
   initials: TK
   slug: torbjorn-krakenes
   image: people/tk-33c7a17f.jpg
   image_width: 600
   image_height: 336
-  role: Senior researcher
+  role: Principal investigator (basic research)
 - name: Marie Ytterdal
   initials: MY
   slug: marie-ytterdal
@@ -58,4 +59,4 @@
   image: people/lb.jpg
   image_width: 689
   image_height: 394
-  role: Associated researcher
+  role: Professor
