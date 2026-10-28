@@ -142,6 +142,8 @@ html[data-theme="dark"] {
 }
 
 .neuropia-person {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   padding: 1.5rem 1.15rem;
   border: 1px solid var(--global-divider-color);
@@ -152,7 +154,7 @@ html[data-theme="dark"] {
 .neuropia-person-link {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex: 1;
   color: var(--global-text-color);
 }
 
