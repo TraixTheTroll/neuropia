@@ -5,7 +5,7 @@
   --global-hover-color: #1e4351;
   --global-text-color: #0f2033;
   --neuropia-badge-text-color: #fff;
-  --neuropia-background-opacity: 0.06;
+  --neuropia-background-opacity: 0.03;
 }
 
 html[data-theme="dark"] {
@@ -31,7 +31,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: url("../img/backgrounds/dm-wallpaper.png") center / cover no-repeat;
+  background: url("../img/backgrounds/dm-wallpaper.png") center / 900px auto repeat;
   opacity: var(--neuropia-background-opacity);
   pointer-events: none;
 }
