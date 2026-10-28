@@ -1,0 +1,6 @@
+# Only propose journal articles published from this date onward.
+since: "2026-01-01"
+
+# Add a DOI here to permanently omit it from future review proposals.
+# This does not remove any publication already in neuropia.bib.
+excluded_dois: []
