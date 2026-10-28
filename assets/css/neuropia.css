@@ -5,7 +5,7 @@
   --global-hover-color: #1e4351;
   --global-text-color: #0f2033;
   --neuropia-badge-text-color: #fff;
-  --neuropia-background-opacity: 0.15;
+  --neuropia-background-opacity: 0.09;
 }
 
 html[data-theme="dark"] {
