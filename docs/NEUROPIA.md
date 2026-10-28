@@ -8,13 +8,13 @@ Edit `_data/members.yml`. Entries appear in file order. Current roles were suppl
 
 Each member has a stable `slug` and an individual Markdown page at `_pages/member-<slug>.md`, published under `/people/<slug>/`. The People cards link to these pages. Edit the short About section on each page to replace its placeholder with a biography. Images and roles are read from `_data/members.yml`; profile pages preserve each image's full aspect ratio. Profile photos are not clickable and have no full-size-image caption. Directory thumbnails use a square crop for a consistent grid.
 
-Member profiles use About, optional Research interests, and optional Links sections. Current work and per-person Selected publications sections are omitted. Casper’s page provides the first completed example. Individual profiles display the full email address as plain, selectable text on its own Email line under Links. LinkedIn, ORCID, and institutional profile URLs remain clickable. These details come from `_data/members.yml`; missing details are hidden. The People directory links to each member’s profile without displaying contact or social links.
+Member profiles use About, optional Research interests, and optional Links sections. Current work and per-person Selected publications sections are omitted. Casper’s page provides the first completed example. Individual profiles display LinkedIn, ORCID, and institutional profile links first, followed by a separate Email line. The full email address remains visible and selectable and links to a `mailto:` target. These details come from `_data/members.yml`; missing details are hidden. The People directory links to each member’s profile without displaying contact or social links.
 
 The main page headings and navigation brand use a bold font weight in `assets/css/neuropia.css`.
 
 ## Affiliations
 
-Edit `_data/affiliations.yml`. The homepage and Contact page read the same list. These describe group affiliations, not affiliations assigned to each individual member. An optional `url` links the affiliation name on Home; Neuro-SysMed is also linked in the homepage introduction.
+Edit `_data/affiliations.yml`. The homepage and Contact page read the same list. These describe group affiliations, not affiliations assigned to each individual member. Neuro-SysMed’s `url` is used only for its link in the homepage introduction. Names in the Affiliations section remain plain text.
 
 ## Publications
 
