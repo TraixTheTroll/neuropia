@@ -5,6 +5,7 @@
   --global-hover-color: #1e4351;
   --global-text-color: #0f2033;
   --neuropia-badge-text-color: #fff;
+  --neuropia-background-opacity: 0.05;
 }
 
 html[data-theme="dark"] {
@@ -19,6 +20,20 @@ html[data-theme="dark"] {
   --global-footer-text-color: #edf2ef;
   --global-footer-link-color: #facc8a;
   --neuropia-badge-text-color: #0f2033;
+}
+
+body {
+  isolation: isolate;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url("../img/backgrounds/dm-wallpaper.png") center / cover no-repeat;
+  opacity: var(--neuropia-background-opacity);
+  pointer-events: none;
 }
 
 .post-header .post-title,
