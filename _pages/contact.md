@@ -2,12 +2,14 @@
 layout: page
 permalink: /contact/
 title: Contact
-description: Affiliations and location
+description: Enquiries, affiliations, and location
 nav: true
 nav_order: 4
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/neuropia.css' | relative_url }}">
+
+For enquiries about Neuropia, please contact **Christopher Elnan Kvistad** at [christopher.elnan.kvistad@helse-bergen.no](mailto:christopher.elnan.kvistad@helse-bergen.no).
 
 Neuropia is based in Bergen, Norway, with the following affiliations.
 
