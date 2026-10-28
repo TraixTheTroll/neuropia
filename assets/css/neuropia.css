@@ -238,9 +238,8 @@ img.neuropia-avatar {
   border-radius: 0.25rem;
 }
 
-.neuropia-profile-figure figcaption {
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
+.neuropia-profile-email {
+  overflow-wrap: anywhere;
 }
 
 .neuropia-profile-role {

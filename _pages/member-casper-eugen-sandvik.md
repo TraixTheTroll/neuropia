@@ -15,12 +15,9 @@ nav: false
 
 <div class="neuropia-member-profile">
   <figure class="neuropia-profile-figure">
-    <a href="{{ member.image | prepend: '/assets/img/' | relative_url }}" aria-label="Open full-size profile image for {{ member.name | escape }}">
-      <img class="neuropia-profile-photo" src="{{ member.image | prepend: '/assets/img/' | relative_url }}"
-        alt="Profile image for {{ member.name | escape }}" width="{{ member.image_width }}" height="{{ member.image_height }}"
-        loading="eager" decoding="async">
-    </a>
-    <figcaption><a href="{{ member.image | prepend: '/assets/img/' | relative_url }}">View full-size image</a></figcaption>
+    <img class="neuropia-profile-photo" src="{{ member.image | prepend: '/assets/img/' | relative_url }}"
+      alt="Profile image for {{ member.name | escape }}" width="{{ member.image_width }}" height="{{ member.image_height }}"
+      loading="eager" decoding="async">
   </figure>
   <div class="neuropia-profile-copy" markdown="1">
 <p class="neuropia-profile-role">{{ member.role | escape }}</p>
@@ -39,12 +36,14 @@ Casper holds a BSc in biomedicine from Høyskolen Kristiania in Oslo and an MSc 
 
 {% if member.email or member.linkedin or member.orcid or member.website %}
 <h2>Links</h2>
+{% if member.email %}<p class="neuropia-profile-email"><strong>Email:</strong> {{ member.email | escape }}</p>{% endif %}
+{% if member.linkedin or member.orcid or member.website %}
 <ul class="neuropia-member-links" aria-label="Links for {{ member.name | escape }}">
-  {% if member.email %}<li><a href="mailto:{{ member.email | escape }}">Email</a></li>{% endif %}
   {% if member.linkedin %}<li><a href="{{ member.linkedin | escape }}">LinkedIn</a></li>{% endif %}
   {% if member.orcid %}<li><a href="https://orcid.org/{{ member.orcid | escape }}">ORCID</a></li>{% endif %}
   {% if member.website %}<li><a href="{{ member.website | escape }}">Institutional profile</a></li>{% endif %}
 </ul>
+{% endif %}
 {% endif %}
 
   </div>
