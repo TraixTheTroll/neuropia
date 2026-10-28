@@ -8,7 +8,7 @@ Edit `_data/members.yml`. Entries appear in file order. Current roles were suppl
 
 Each member has a stable `slug` and an individual Markdown page at `_pages/member-<slug>.md`, published under `/people/<slug>/`. The People cards link to these pages. Edit the short About section on each page to replace its placeholder with a biography. Images and roles are read from `_data/members.yml`; profile pages preserve each image's full aspect ratio and provide a link to the full-resolution JPEG. Directory thumbnails use a square crop for a consistent grid.
 
-Member profiles use About, optional Research interests, and optional Links sections. Current work and per-person Selected publications sections are omitted. Casper’s page provides the first completed example. Email, LinkedIn, ORCID, and institutional profile links appear on the directory and individual profile when supplied in `_data/members.yml`; missing links are hidden.
+Member profiles use About, optional Research interests, and optional Links sections. Current work and per-person Selected publications sections are omitted. Casper’s page provides the first completed example. Email, LinkedIn, ORCID, and institutional profile links appear only on individual profiles when supplied in `_data/members.yml`; missing links are hidden. The People directory links to each member’s profile without displaying contact or social links.
 
 The main page headings and navigation brand use a bold font weight in `assets/css/neuropia.css`.
 
