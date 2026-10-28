@@ -18,6 +18,8 @@ Edit `_data/affiliations.yml`. The homepage and Contact page read the same list.
 
 ## Publications
 
+New public ORCID journal articles are checked daily and proposed in a review PR. See [Publication synchronization](PUBLICATION_SYNC.md) for coverage, review, exclusions, and manual runs. The automation never merges publication proposals automatically.
+
 Edit `_bibliography/neuropia.bib`. The initial selection contains eight PubMed-verified publications from 2022–2026, with DOI, PubMed, and PMC full-text links. The Publications page renders entries in descending year order and displays an explanatory message if the bibliography is empty. The template's `papers.bib` is retained as an example and is not used for group publications. The optional inline publication filter is disabled because the pinned template version raises a browser error during input; site search remains enabled. See `sources/README.md` for queries, screening decisions, metadata, and editorial limits. The sources directory is excluded from the website build.
 
 ## Research and news

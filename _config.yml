@@ -234,6 +234,8 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
+  - requirements-publications.txt
+  - test/test_orcid_publications.py
   - _pages/about_einstein.md
   # Keep template examples in the repository, but out of the group website.
   - _pages/blog.md

@@ -65,6 +65,8 @@ If gems are installed locally under `vendor/bundle`, prefix Bundler commands wit
 
 ## Deployment
 
+Public ORCID journal articles are checked daily and proposed as bibliography additions in a review PR. Merging an accepted proposal publishes it through the normal deployment. See [Publication synchronization](docs/PUBLICATION_SYNC.md) for configuration and review instructions.
+
 The production configuration is:
 
 ```yaml

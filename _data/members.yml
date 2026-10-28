@@ -8,6 +8,7 @@
   image_height: 2860
   role: Clinical principal investigator
   email: christopher.elnan.kvistad@helse-bergen.no
+  orcid: 0000-0002-8393-2772
 - name: Torbjørn Kråkenes
   initials: TK
   slug: torbjorn-krakenes
@@ -15,6 +16,7 @@
   image_width: 600
   image_height: 336
   role: Principal investigator (basic research)
+  orcid: 0000-0002-4031-5360
 - name: Marie Ytterdal
   initials: MY
   slug: marie-ytterdal
@@ -22,6 +24,7 @@
   image_width: 415
   image_height: 739
   role: PhD candidate
+  orcid: 0009-0004-6032-7600
 - name: Casper Eugen Sandvik
   initials: CS
   slug: casper-eugen-sandvik
@@ -60,3 +63,4 @@
   image_width: 689
   image_height: 394
   role: Professor
+  orcid: 0000-0001-8675-4433
