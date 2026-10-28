@@ -9,6 +9,8 @@ nav: false
 
 <link rel="stylesheet" href="{{ '/assets/css/neuropia.css' | relative_url }}">
 
+{% assign neuro_sysmed = site.data.affiliations | where: 'name', 'Neuro-SysMed' | first %}
+
 <div class="neuropia-home">
   <div class="neuropia-intro">
     <div class="neuropia-intro-copy">
@@ -20,7 +22,7 @@ nav: false
         with multiple sclerosis as our main disease focus. Our broader research interests include other
         neurodegenerative disorders, such as Parkinson’s disease.
       </p>
-      <p>We are based at Neuro-SysMed, Haukeland University Hospital, and the University of Bergen, Norway.</p>
+      <p>We are based at <a href="{{ neuro_sysmed.url | escape }}">Neuro-SysMed</a>, Haukeland University Hospital, and the University of Bergen, Norway.</p>
     </div>
     <img class="neuropia-logo" src="{{ '/assets/img/neuropia-logo.png' | relative_url }}"
       alt="Neuropia logo: a brain above mountains, surrounded by vesicle-like spheres"
@@ -53,7 +55,7 @@ nav: false
     <div class="neuropia-affiliation-grid">
       {% for affiliation in site.data.affiliations %}
         <div>
-          <h3>{{ affiliation.name | escape }}</h3>
+          <h3>{% if affiliation.url %}<a href="{{ affiliation.url | escape }}">{{ affiliation.name | escape }}</a>{% else %}{{ affiliation.name | escape }}{% endif %}</h3>
           <p>{{ affiliation.department | escape }}<br>{{ affiliation.institution | escape }}<br>{{ affiliation.address | escape }}</p>
         </div>
       {% endfor %}
