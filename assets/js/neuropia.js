@@ -2,12 +2,24 @@
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const backToTop = document.querySelector(".back-to-top");
   if (backToTop) {
+    let shown = false;
+    backToTop.hidden = false;
     const updateBackToTop = () => {
-      const hidden = window.scrollY <= 120;
-      if (backToTop.hidden !== hidden) backToTop.hidden = hidden;
+      if (!backToTop.classList.contains("is-ready")) return;
+      const visible = window.scrollY > 120;
+      if (visible === shown) return;
+      shown = visible;
+      backToTop.inert = !visible;
+      backToTop.classList.toggle("is-visible", visible);
     };
     window.addEventListener("scroll", updateBackToTop, { passive: true });
-    updateBackToTop();
+    // Paint the transparent state before enabling transitions, including in Safari.
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        backToTop.classList.add("is-ready");
+        updateBackToTop();
+      });
+    });
     backToTop.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: reducedMotion.matches ? "instant" : "smooth" });
     });
@@ -37,20 +49,32 @@
 
   function resize() {
     const bounds = canvas.getBoundingClientRect();
+    if (!bounds.width || !bounds.height) return false;
+    const ratio = window.devicePixelRatio || 1;
+    const pixelWidth = Math.round(bounds.width * ratio);
+    const pixelHeight = Math.round(bounds.height * ratio);
+    if (w === bounds.width && h === bounds.height && canvas.width === pixelWidth && canvas.height === pixelHeight) return false;
+    if (w && h) {
+      // Keep the field spread across the viewport when a window or foldable expands.
+      for (const point of [...stars, ...particles]) {
+        point.x = Math.min(bounds.width, Math.max(0, (point.x / w) * bounds.width));
+        point.y = Math.min(bounds.height, Math.max(0, (point.y / h) * bounds.height));
+      }
+    }
     w = bounds.width;
     h = bounds.height;
-    const ratio = window.devicePixelRatio || 1;
-    const pixelWidth = Math.round(w * ratio);
-    const pixelHeight = Math.round(h * ratio);
     if (canvas.width !== pixelWidth) canvas.width = pixelWidth;
     if (canvas.height !== pixelHeight) canvas.height = pixelHeight;
     // Draw in CSS pixels while using the screen's full physical resolution.
     ctx.setTransform(canvas.width / w, 0, 0, canvas.height / h, 0, 0);
+    return true;
   }
-  window.addEventListener("resize", () => {
-    resize();
-    restart();
-  });
+  function syncBackground() {
+    if (resize()) restart();
+  }
+  window.addEventListener("resize", syncBackground);
+  const canvasResizeObserver = new ResizeObserver(syncBackground);
+  canvasResizeObserver.observe(canvas);
   resize();
 
   for (let i = 0; i < 150; i++) {
