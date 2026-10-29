@@ -1,0 +1,15 @@
+{% assign clinical_pi = site.data.members | where: 'slug', 'christopher-elnan-kvistad' | first %}
+<p>
+  For enquiries about Neuropia, please contact {{ clinical_pi.name | escape }} at
+  <a href="mailto:{{ clinical_pi.email | escape }}">{{ clinical_pi.email | escape }}</a>.
+</p>
+{% for affiliation in site.data.affiliations %}
+  <p>
+    <strong>{{ affiliation.name | escape }}</strong><br>
+    {{ affiliation.department | escape -}}
+    <br>
+    {{ affiliation.institution | escape -}}
+    <br>
+    {{ affiliation.address | escape }}
+  </p>
+{% endfor %}

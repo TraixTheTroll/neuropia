@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: neuropia
 permalink: /people/anna-maria-rasmussen-eitrheim/
 title: Anna-Maria Rasmussen Eitrheim
 description: Neuropia research group
@@ -7,11 +7,9 @@ member_slug: anna-maria-rasmussen-eitrheim
 nav: false
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/neuropia.css' | relative_url }}">
-
 {% assign member = site.data.members | where: 'slug', page.member_slug | first %}
 
-<p><a href="{{ '/people/' | relative_url }}">← All people</a></p>
+<p><a href="{{ '/#people' | relative_url }}">← All people</a></p>
 
 <div class="neuropia-member-profile">
   <figure class="neuropia-profile-figure">

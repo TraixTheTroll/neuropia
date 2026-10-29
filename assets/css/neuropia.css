@@ -1,297 +1,507 @@
-/* Site styles layered over the al-folio theme. The group logo is used without edits. */
-/* Brand colors sampled from the original group logo. */
+/* Visual design adapted from the group-supplied neuropia-main/index.html. */
 :root {
-  --global-theme-color: #2c7a77;
-  --global-hover-color: #1e4351;
-  --global-text-color: #0f2033;
-  --neuropia-badge-text-color: #fff;
-  --neuropia-background-opacity: 0.03;
+  --navy: #050d14;
+  --teal: #2ec4b6;
+  --warm: #ff9f1c;
+  --text: #e8e6e3;
+  --muted: #a8b2b9;
 }
-
-html[data-theme="dark"] {
-  --global-bg-color: #0f2033;
-  --global-card-bg-color: #193c4b;
-  --global-text-color: #edf2ef;
-  --global-theme-color: #facc8a;
-  --global-hover-color: #ffe2b5;
-  --global-hover-text-color: #0f2033;
-  --global-divider-color: #37535d;
-  --global-footer-bg-color: #0c1d32;
-  --global-footer-text-color: #edf2ef;
-  --global-footer-link-color: #facc8a;
-  --neuropia-badge-text-color: #0f2033;
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  isolation: isolate;
+  font-family: "Inter", sans-serif;
+  background: var(--navy);
+  color: var(--text);
+  overflow-x: hidden;
+  min-height: 100vh;
 }
-
-body::before {
-  content: "";
+#canvas {
   position: fixed;
-  inset: 0;
-  z-index: -1;
-  background: url("../img/backgrounds/dm-wallpaper.png") center / 900px auto repeat;
-  opacity: var(--neuropia-background-opacity);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
   pointer-events: none;
 }
-
-.post-header .post-title,
-.navbar-brand.title {
-  font-weight: 700;
+.content {
+  position: relative;
+  z-index: 2;
 }
-
-.navbar-brand.title::before {
-  content: "";
-  display: inline-block;
-  width: 2.4rem;
-  height: 2.4rem;
-  margin-right: 0.4rem;
-  vertical-align: middle;
-  background: url("../img/neuropia-logo.png") center / contain no-repeat;
-}
-
-.publications .abbr abbr {
-  color: var(--neuropia-badge-text-color);
-}
-
-.neuropia-intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 340px;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  padding: 0.9rem 4vw;
+  background: rgba(5, 13, 20, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(46, 196, 182, 0.2);
 }
-
-.neuropia-logo {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.neuropia-lead {
-  max-width: 44rem;
-  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
-  line-height: 1.55;
-}
-
-.neuropia-feature-grid,
-.neuropia-affiliation-grid,
-.neuropia-people-grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.neuropia-feature-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.neuropia-affiliation-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.neuropia-feature-grid {
-  margin-block: 2.5rem 3rem;
-}
-
-.neuropia-feature {
-  display: flex;
-  flex-direction: column;
-  padding: 1.75rem;
-  border: 1px solid var(--global-divider-color);
-  border-top: 3px solid var(--global-theme-color);
-  border-radius: 0.25rem;
-  color: var(--global-text-color);
-  background: var(--global-card-bg-color, var(--global-bg-color));
-}
-
-.neuropia-feature:hover,
-.neuropia-feature:focus-visible {
-  color: var(--global-text-color);
-  text-decoration: none;
-  border-color: var(--global-theme-color);
-}
-
-.neuropia-feature:focus-visible {
-  outline: 2px solid var(--global-theme-color);
-  outline-offset: 4px;
-}
-
-.neuropia-eyebrow {
-  font-size: 0.75rem;
-  font-weight: 600;
+nav .logo-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  color: var(--teal);
   letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
-
-.neuropia-feature h2 {
-  margin-block: 0.65rem;
-  font-size: 1.65rem;
-}
-
-.neuropia-link-label {
-  display: inline-block;
-  margin-top: auto;
-  padding-top: 0.5rem;
-  color: var(--global-theme-color);
-}
-
-.neuropia-affiliations {
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--global-divider-color);
-}
-
-.neuropia-affiliation-grid {
-  margin-top: 1.5rem;
-}
-
-.neuropia-affiliation-grid h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.neuropia-people-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 1.75rem 0;
-  padding: 0;
+nav ul {
+  display: flex;
   list-style: none;
+  gap: 1.8rem;
 }
-
-.neuropia-person {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  padding: 1.5rem 1.15rem;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 0.25rem;
-  background: var(--global-card-bg-color, var(--global-bg-color));
-}
-
-.neuropia-person-link {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  color: var(--global-text-color);
-}
-
-.neuropia-person-link:hover,
-.neuropia-person-link:focus-visible {
-  color: var(--global-text-color);
+nav a {
+  color: var(--muted);
   text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.3s;
 }
-
-.neuropia-person-link:focus-visible {
-  outline: 2px solid var(--global-theme-color);
-  outline-offset: 6px;
+nav a:hover {
+  color: var(--teal);
 }
-
-.neuropia-person:focus-within,
-.neuropia-person:hover {
-  border-color: var(--global-theme-color);
-}
-
-.neuropia-avatar {
+.hero {
+  min-height: 100vh;
   display: flex;
-  width: 88px;
-  height: 88px;
-  margin-bottom: 1.25rem;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-img.neuropia-avatar {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1;
-  border-radius: 0.2rem;
-}
-
-.neuropia-initials {
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
-  font-weight: 300;
-  color: var(--global-theme-color);
+  text-align: center;
+  padding: 6rem 5vw 8rem;
 }
-
-.neuropia-person h2 {
-  margin: 0;
+.logo {
+  width: 380px;
+  height: auto;
+  max-width: 80vw;
+  filter: drop-shadow(0 0 40px rgba(46, 196, 182, 0.5));
+  animation:
+    float 7s ease-in-out infinite,
+    glow 4s ease-in-out infinite alternate;
+  margin-bottom: 1rem;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 30px rgba(46, 196, 182, 0.4));
+  }
+  to {
+    filter: drop-shadow(0 0 55px rgba(255, 159, 28, 0.55));
+  }
+}
+.hero h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  background: linear-gradient(135deg, #fff, var(--teal), var(--warm));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.4rem;
+}
+.subtitle {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.tagline {
+  max-width: 680px;
   font-size: 1.15rem;
-  line-height: 1.45;
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+.cta {
+  padding: 0.85rem 2.2rem;
+  border: 1px solid var(--teal);
+  color: var(--teal);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  border-radius: 30px;
+  transition: all 0.4s;
+}
+.cta:hover {
+  background: var(--teal);
+  color: var(--navy);
+  box-shadow: 0 0 25px rgba(46, 196, 182, 0.45);
+}
+section {
+  padding: 2rem 5vw;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  background: rgba(5, 13, 20, 0.33);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  border: 1px solid rgba(46, 196, 182, 0.15);
+}
+.section-label {
+  color: var(--teal);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+  margin-bottom: 0.6rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+p {
+  color: var(--muted);
+  margin-bottom: 0.9rem;
+  line-height: 1.65;
+  font-size: 1.02rem;
+}
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+@media (max-width: 700px) {
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.card {
+  background: rgba(12, 31, 42, 0.65);
+  border: 1px solid rgba(46, 196, 182, 0.3);
+  padding: 1.5rem;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  transition: all 0.35s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--teal);
+  box-shadow: 0 8px 30px rgba(46, 196, 182, 0.2);
+}
+.card h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+.person {
+  text-align: center;
+  background: rgba(12, 31, 42, 0.6);
+  border: 1px solid rgba(46, 196, 182, 0.25);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+.person:hover {
+  transform: translateY(-4px);
+}
+.person img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.6rem;
+  border: 2px solid var(--teal);
+}
+.person h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.15rem;
+  margin-bottom: 0.2rem;
+  color: #fff;
+}
+.person p {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0;
+}
+.pub {
+  margin-bottom: 1.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(46, 196, 182, 0.2);
+}
+.pub h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+  color: #fff;
+}
+.pub .meta {
+  font-size: 0.8rem;
+  color: var(--teal);
+  margin-bottom: 0.2rem;
+}
+.pub p {
+  font-size: 0.88rem;
+  margin: 0;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  border-top: 1px solid rgba(46, 196, 182, 0.2);
 }
 
-.neuropia-role {
-  margin-top: 0.5rem;
-  color: var(--global-text-color);
+@media (max-width: 768px) {
+  .logo {
+    width: 220px;
+    margin-bottom: 0.6rem;
+  }
+  .hero {
+    padding: 5rem 4vw 4rem;
+    min-height: 90vh;
+  }
+  .hero h1 {
+    font-size: 2.6rem;
+    letter-spacing: 0.06em;
+  }
+  .subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+  }
+  .tagline {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .cta {
+    padding: 0.7rem 1.6rem;
+    font-size: 0.75rem;
+  }
+  nav {
+    padding: 0.7rem 4vw;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+  nav a {
+    font-size: 0.75rem;
+  }
+  section {
+    padding: 1.5rem 4vw;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+  .people-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+  .person img {
+    width: 90px;
+    height: 90px;
+  }
+  .person h3 {
+    font-size: 1rem;
+  }
+  .pub h3 {
+    font-size: 1.05rem;
+  }
+}
+@media (max-width: 480px) {
+  .logo {
+    width: 180px;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.neuropia-member-links {
+/* Shared navigation and content keep the supplied design across every URL. */
+a {
+  color: var(--teal);
+}
+a:hover {
+  color: var(--text);
+}
+a:focus-visible {
+  outline: 2px solid var(--warm);
+  outline-offset: 5px;
+}
+.hero-spacer {
+  height: 40vh;
+}
+.person {
+  display: block;
+  text-decoration: none;
+}
+.person:focus-visible {
+  transform: translateY(-4px);
+}
+.person-initials {
+  display: inline-grid;
+  place-items: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid var(--teal);
+  margin-bottom: 0.6rem;
+}
+.publication-list ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.publication-list > h2 {
+  display: none;
+}
+.pub h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+.pub h3 a:hover {
+  color: var(--teal);
+}
+.pub-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  padding: 0;
-  margin-top: 1rem;
-  list-style: none;
+  gap: 1rem;
+  padding-top: 0.35rem;
 }
-
-.neuropia-member-profile {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-  align-items: start;
-  gap: 2.5rem;
-  margin-block: 2rem;
+.pub-links a {
+  font-size: 0.78rem;
+  text-decoration: none;
 }
-
-.neuropia-profile-figure {
-  margin: 0;
-}
-
-.neuropia-profile-photo {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.25rem;
-}
-
+#contact a,
 .neuropia-profile-email {
   overflow-wrap: anywhere;
 }
-
-.neuropia-profile-role {
-  font-weight: 600;
-  color: var(--global-theme-color);
+.inner-page {
+  min-height: calc(100vh - 90px);
+  padding: 7rem 4vw 2rem;
 }
-
-@media (max-width: 720px) {
+.page-panel > h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+.page-panel h2 {
+  font-size: 1.7rem;
+  margin-top: 1.6rem;
+}
+.page-panel ul:not(nav ul) {
+  margin: 0 0 1rem 1.2rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+.neuropia-member-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 2rem;
+}
+.neuropia-profile-figure {
+  margin: 0;
+}
+.neuropia-profile-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(46, 196, 182, 0.3);
+}
+.neuropia-profile-copy {
+  min-width: 0;
+}
+.neuropia-profile-role {
+  color: var(--teal);
+}
+.neuropia-member-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+}
+.page-panel .neuropia-member-links {
+  margin-left: 0;
+}
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: -5rem;
+  z-index: 101;
+  background: var(--navy);
+  padding: 1rem;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+@media (max-width: 768px) {
   .neuropia-member-profile {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-
-  .neuropia-intro {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .neuropia-logo {
-    grid-row: 1;
-    width: min(100%, 16rem);
-    justify-self: center;
-  }
-
-  .neuropia-feature-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .neuropia-people-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .neuropia-profile-photo {
+    max-width: 460px;
+    margin: 0 auto;
   }
 }
-
-@media (max-width: 480px) {
-  .neuropia-feature-grid,
-  .neuropia-affiliation-grid,
-  .neuropia-people-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+  nav ul {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  nav a {
+    font-size: 0.72rem;
+  }
+  .inner-page {
+    padding-top: 8rem;
+  }
+  html {
+    scroll-padding-top: 110px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
   }
 }

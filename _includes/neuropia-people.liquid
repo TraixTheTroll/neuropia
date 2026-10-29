@@ -1,0 +1,23 @@
+<div class="people-grid">
+  {% for member in site.data.members %}
+    {% assign profile_path = '/people/' | append: member.slug | append: '/' %}
+    <a class="person" href="{{ profile_path | relative_url }}" aria-label="View profile of {{ member.name | escape }}">
+      {% if member.image %}
+        <img
+          src="{{ member.image | prepend: '/assets/img/' | relative_url }}"
+          alt=""
+          width="{{ member.image_width }}"
+          height="{{ member.image_height }}"
+          loading="lazy"
+          decoding="async"
+        >
+      {% else %}
+        <span class="person-initials" aria-hidden="true">{{ member.initials | escape }}</span>
+      {% endif %}
+      <h3>{{ member.name | escape }}</h3>
+      {% if member.role %}
+        <p>{{ member.role | escape }}</p>
+      {% endif %}
+    </a>
+  {% endfor %}
+</div>

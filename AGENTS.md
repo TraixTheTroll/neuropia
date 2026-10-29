@@ -1,4 +1,10 @@
-# Agent Guidelines for al-folio (v1.x)
+# Agent Guidelines for Neuropia
+
+This repository is the Neuropia user site, not the upstream al-folio starter. Its base URL is `/neuropia`. The group-supplied animated design uses site-owned `_layouts/neuropia*.liquid`, `_includes/neuropia-*.liquid`, `assets/css/neuropia.css`, and `assets/js/neuropia.js`. These custom files are intentional under the user-site exception documented below. Preserve the always-open homepage sections, clickable member profiles, maintained member data, and ORCID publication review workflow. See [docs/NEUROPIA.md](docs/NEUROPIA.md) for the current editing guide.
+
+The inherited starter instructions below describe upstream architecture. Its `lint:style-contract` is an upstream-only check and rejects the custom layouts supported on user sites. For Neuropia changes, run Prettier, the production Jekyll build, relevant tests, and the upgrade/override audits. Do not use the upstream `/al-folio` example base URL.
+
+# Inherited al-folio guidelines (v1.x)
 
 **This file is the authoritative entry point for coding agents working in this repo.** Read it before making any change. It is intentionally short and tool-neutral; it links to the one place each longer-form fact lives.
 
