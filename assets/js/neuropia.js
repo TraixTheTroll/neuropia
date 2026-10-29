@@ -36,10 +36,21 @@
     stars = [];
 
   function resize() {
-    w = canvas.width = window.innerWidth;
-    h = canvas.height = window.innerHeight;
+    const bounds = canvas.getBoundingClientRect();
+    w = bounds.width;
+    h = bounds.height;
+    const ratio = window.devicePixelRatio || 1;
+    const pixelWidth = Math.round(w * ratio);
+    const pixelHeight = Math.round(h * ratio);
+    if (canvas.width !== pixelWidth) canvas.width = pixelWidth;
+    if (canvas.height !== pixelHeight) canvas.height = pixelHeight;
+    // Draw in CSS pixels while using the screen's full physical resolution.
+    ctx.setTransform(canvas.width / w, 0, 0, canvas.height / h, 0, 0);
   }
-  window.addEventListener("resize", resize);
+  window.addEventListener("resize", () => {
+    resize();
+    restart();
+  });
   resize();
 
   for (let i = 0; i < 150; i++) {
