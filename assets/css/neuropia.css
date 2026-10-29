@@ -221,10 +221,16 @@ p {
   border: 1px solid rgba(46, 196, 182, 0.25);
   border-radius: 10px;
   padding: 1rem;
-  transition: transform 0.3s;
+  transition:
+    transform 0.3s,
+    border-color 0.35s,
+    box-shadow 0.35s;
 }
-.person:hover {
+.person:hover,
+.person:focus-visible {
   transform: translateY(-4px);
+  border-color: var(--teal);
+  box-shadow: 0 8px 30px rgba(46, 196, 182, 0.2);
 }
 .person img {
   width: 110px;
@@ -361,9 +367,6 @@ a:focus-visible {
   display: block;
   text-decoration: none;
 }
-.person:focus-visible {
-  transform: translateY(-4px);
-}
 .person-initials {
   display: inline-grid;
   place-items: center;
@@ -378,8 +381,52 @@ a:focus-visible {
   padding: 0;
   margin: 0;
 }
-.publication-list > h2 {
+.publication-list > h2.bibliography {
+  color: var(--teal);
+  font-size: 1.7rem;
+  margin: 1.6rem 0 0.8rem;
+}
+.publication-year {
+  margin: 1rem 0;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(46, 196, 182, 0.25);
+  border-radius: 10px;
+  background: rgba(12, 31, 42, 0.35);
+}
+.publication-year > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+}
+.publication-year > summary::-webkit-details-marker {
   display: none;
+}
+.publication-year > summary::after {
+  content: "+";
+  color: var(--teal);
+  font-size: 1.4rem;
+}
+.publication-year[open] > summary::after {
+  content: "−";
+}
+.publication-year[open] > summary {
+  margin-bottom: 1rem;
+}
+.publication-year > summary h2 {
+  color: var(--teal);
+  font-size: 1.7rem;
+  margin: 0;
+}
+.publication-year > summary:focus-visible {
+  outline: 2px solid var(--warm);
+  outline-offset: 5px;
+}
+.publication-year li:last-child .pub {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 .pub h3 a {
   color: inherit;

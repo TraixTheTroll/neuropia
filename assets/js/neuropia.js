@@ -1,4 +1,17 @@
 (() => {
+  // Keep readable year headings without JavaScript; enhance them with native toggles.
+  document.querySelectorAll(".publication-list > h2.bibliography").forEach((heading) => {
+    const papers = heading.nextElementSibling;
+    if (!papers?.matches("ol.bibliography")) return;
+    const year = document.createElement("details");
+    year.className = "publication-year";
+    year.open = true;
+    const summary = document.createElement("summary");
+    heading.before(year);
+    summary.append(heading);
+    year.append(summary, papers);
+  });
+
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
   if (!ctx) return;
@@ -78,29 +91,4 @@
   reducedMotion.addEventListener("change", restart);
   document.addEventListener("visibilitychange", restart);
   restart();
-
-  // Desktop: jump to first section when scrolling down from near the top
-  if (document.querySelector(".hero")) {
-    let isJumping = false;
-    window.addEventListener(
-      "wheel",
-      (e) => {
-        if (isJumping || window.innerWidth <= 768 || reducedMotion.matches) return;
-        const nearTop = window.scrollY < 100;
-        if (nearTop && e.deltaY > 40) {
-          const firstSection = document.querySelector("section");
-          if (firstSection) {
-            isJumping = true;
-            const offset = 80; // larger offset so it doesn't overshoot the top border
-            const top = firstSection.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
-            setTimeout(() => {
-              isJumping = false;
-            }, 800);
-          }
-        }
-      },
-      { passive: true }
-    );
-  }
 })();
