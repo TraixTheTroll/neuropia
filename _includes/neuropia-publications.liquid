@@ -1,0 +1,6 @@
+{% capture group_publications %}{% bibliography --template neuropia-bib %}{% endcapture %}
+{% if group_publications contains '<li' %}
+  <div class="publication-list">{{ group_publications }}</div>
+{% else %}
+  <p>We are preparing the group's publication list. Please check back for updates.</p>
+{% endif %}

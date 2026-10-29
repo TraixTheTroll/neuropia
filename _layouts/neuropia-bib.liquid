@@ -1,0 +1,38 @@
+---
+---
+<article class="pub" id="{{ entry.key | escape }}">
+  <div class="meta">
+    {{ entry.year | escape -}}
+    {%- if entry.abbr %} · {{ entry.abbr | escape }}{% endif %}
+  </div>
+  <h3>
+    {% if entry.doi -%}
+      <a href="https://doi.org/{{ entry.doi | escape }}">{{ entry.title }}</a>
+    {%- else -%}
+      {{- entry.title -}}
+    {%- endif %}
+  </h3>
+  {% assign extra_authors = entry.author_array.size | minus: 3 %}
+  <p>
+    {%- for author in entry.author_array limit: 3 %}
+      {{- author.first | escape }}
+      {{ author.last | escape -}}
+      {%- unless forloop.last %}, {% endunless -%}
+    {% endfor -%}
+    {%- if extra_authors > 0 -%}
+      , and {{ extra_authors }} more author{% if extra_authors != 1 %}s{% endif -%}
+    {%- endif %}
+    · {{ entry.journal | escape }} · {{ entry.year | escape }}
+  </p>
+  <p class="pub-links">
+    {% if entry.doi -%}
+      <a href="https://doi.org/{{ entry.doi | escape }}">DOI</a>
+    {%- endif %}
+    {% if entry.pmid -%}
+      <a href="https://pubmed.ncbi.nlm.nih.gov/{{ entry.pmid | escape }}/">PubMed</a>
+    {%- endif %}
+    {% if entry.html -%}
+      <a href="{{ entry.html | escape }}">Read article</a>
+    {%- endif %}
+  </p>
+</article>

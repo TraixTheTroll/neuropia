@@ -1,13 +1,11 @@
 ---
-layout: page
+layout: neuropia
 permalink: /research/
 title: Research
 description: Mesenchymal stem cells, extracellular vesicles, and neurological disease
 nav: true
 nav_order: 1
 ---
-
-<link rel="stylesheet" href="{{ '/assets/css/neuropia.css' | relative_url }}">
 
 Neuropia investigates mesenchymal stem cells (MSCs) and extracellular vesicles (EVs) as potential therapeutic approaches for neurological disease. **Multiple sclerosis is our main disease focus**, with broader interests in other neurodegenerative disorders, including Parkinson’s disease.
 

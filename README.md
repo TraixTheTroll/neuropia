@@ -19,7 +19,7 @@ Research descriptions distinguish laboratory, animal-model, review, and clinical
 
 ## Website content
 
-The navigation contains **Home, Research, People, Publications, and Contact**. Each member has a clickable profile with a larger image and an editable biography. Christopher’s and Casper’s profiles include biographies and contact details; Torbjørn’s profile introduces his basic research leadership. Other biographies currently contain placeholders.
+The animated homepage contains **About, Research, People, Publications, and Contact** sections. Navigation scrolls to each section; sections remain open. The dark visual design follows the group-supplied `neuropia-main/index.html`, including its floating logo, typography, translucent panels, particle background, and desktop scroll transition. Mobile navigation remains available. Visitors who request reduced motion receive a static background and no animated scrolling. Each member has a clickable profile with a larger image and an editable biography. Christopher’s and Casper’s profiles include biographies and contact details; Torbjørn’s profile introduces his basic research leadership. Other biographies currently contain placeholders.
 
 | Content                                             | Where to edit                                                  |
 | --------------------------------------------------- | -------------------------------------------------------------- |
@@ -36,6 +36,8 @@ The navigation contains **Home, Research, People, Publications, and Contact**. E
 | Logo                                                | [`assets/img/neuropia-logo.png`](assets/img/neuropia-logo.png) |
 | Group colors and styles                             | [`assets/css/neuropia.css`](assets/css/neuropia.css)           |
 | Site settings and enabled features                  | [`_config.yml`](_config.yml)                                   |
+
+The shared page shell is `_layouts/neuropia.liquid`. Homepage and standalone pages share `_includes/neuropia-people.liquid`, `_includes/neuropia-publications.liquid`, and `_includes/neuropia-contact.liquid`; publications render through `_layouts/neuropia-bib.liquid`. Animation code lives in `assets/js/neuropia.js`. Existing `/research/`, `/people/`, `/publications/`, and `/contact/` URLs remain available with the new design.
 
 See [Maintaining the Neuropia website](docs/NEUROPIA.md) for editing details, image handling, branding, and known limitations. [Publication provenance](sources/README.md) records the PubMed search, author checks, and screening decisions; `sources/` is excluded from the published website.
 
@@ -57,7 +59,6 @@ For content or styling changes:
 
 ```bash
 npm run lint:prettier
-npm run lint:style-contract
 JEKYLL_ENV=production bundle exec jekyll build
 ```
 
@@ -84,7 +85,7 @@ Read [AGENTS.md](AGENTS.md) and [the Neuropia maintenance guide](docs/NEUROPIA.m
 
 Some inherited documentation and agent instructions describe the generic starter and use `/al-folio` as an example base URL. For this website, use `_config.yml` and the Neuropia maintenance guide: the correct base URL is **`/neuropia`**. Example posts, pages, and bibliographies retained in the repository are excluded from publication; group publications use `neuropia.bib`.
 
-Keep content edits in the files listed above. Layouts, includes, and most runtime behavior come from versioned gems; consult [architecture](docs/ARCHITECTURE.md) and [ownership boundaries](docs/BOUNDARIES.md) before changing them. Plugin changes must keep `Gemfile` and `_config.yml` aligned. No gem-owned layouts or includes are currently overridden locally.
+Keep content edits in the files listed above. Neuropia uses custom layouts and includes for its supplied design while retaining the Jekyll and publication tooling. The inherited `lint:style-contract` checks the upstream starter and intentionally rejects user-site custom layouts; it is not a check for this website. Consult [architecture](docs/ARCHITECTURE.md) and [ownership boundaries](docs/BOUNDARIES.md) before changing them. Plugin changes must keep `Gemfile` and `_config.yml` aligned. The Neuropia templates have distinct names and do not shadow gem-owned files. Run `bundle exec al-folio upgrade overrides audit` when adding or changing layouts.
 
 ## Original template and attribution
 
