@@ -66,8 +66,8 @@
   }
 
   function animate() {
-    ctx.fillStyle = "rgba(5, 13, 20, 0.25)";
-    ctx.fillRect(0, 0, w, h);
+    // Clear old positions completely so moving circles never leave trails.
+    ctx.clearRect(0, 0, w, h);
 
     stars.forEach((s) => {
       s.a += s.speed * 0.02;
