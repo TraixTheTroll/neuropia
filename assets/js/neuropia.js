@@ -1,4 +1,18 @@
 (() => {
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const backToTop = document.querySelector(".back-to-top");
+  if (backToTop) {
+    const updateBackToTop = () => {
+      const hidden = window.scrollY <= 120;
+      if (backToTop.hidden !== hidden) backToTop.hidden = hidden;
+    };
+    window.addEventListener("scroll", updateBackToTop, { passive: true });
+    updateBackToTop();
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: reducedMotion.matches ? "instant" : "smooth" });
+    });
+  }
+
   // Keep readable year headings without JavaScript; enhance them with native toggles.
   document.querySelectorAll(".publication-list > h2.bibliography").forEach((heading) => {
     const papers = heading.nextElementSibling;
@@ -15,7 +29,6 @@
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
   if (!ctx) return;
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   let frame;
   let w,
     h,

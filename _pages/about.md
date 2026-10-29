@@ -12,7 +12,7 @@ nav: false
   <h1>NEUROPIA</h1>
   <div class="subtitle">Research group · Bergen, Norway</div>
   <p class="tagline">Exploring the therapeutic potential of mesenchymal stromal cells, extracellular vesicles and lipid nanoparticles in neurological disease — from cellular cultures to clinical translation.</p>
-  <a href="#research" class="cta">Explore the cosmos of repair</a>
+  <a href="#about" class="cta">Explore the cosmos of repair</a>
 </header>
 <div class="hero-spacer" aria-hidden="true"></div>
 
