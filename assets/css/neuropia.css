@@ -550,9 +550,9 @@ a:focus-visible {
 }
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
   .hero h1 {
-    background: none;
+    background-image: linear-gradient(135deg, #fff, #59d9c9, #ffca70);
     color: #f5fffd;
-    -webkit-text-fill-color: #f5fffd;
+    -webkit-text-fill-color: transparent;
     font-weight: 600;
   }
 }
