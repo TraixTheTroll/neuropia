@@ -133,14 +133,6 @@ div#notebook {
   border: none;
 }
 
-.navbar-nav > li > .dropdown-menu {
-  margin-top: 0px;
-}
-
-.navbar-nav {
-  margin: 0;
-}
-
 @-webkit-keyframes pulsate {
   0% {
     -webkit-transform: scale(1, 1);
@@ -279,14 +271,6 @@ div#notebook {
   background-color: #ffccac !important;
   border-color: #ffccac !important;
   transition: 200ms ease !important;
-}
-
-
-.btn-sm {
-  font-size: inherit;
-  font-weight: normal;
-  height: inherit;
-  line-height: inherit;
 }
 
 button.close {
