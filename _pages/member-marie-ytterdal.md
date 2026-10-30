@@ -22,7 +22,13 @@ nav: false
 
 ## About
 
-A short biography and research interests will be added here.
+Marie Ytterdal holds a Bachelor’s degree in Biomedicine from the University of Tromsø and a Master’s degree in Biomedical Science from the University of Bergen, completed in 2024. She is currently a PhD candidate at Neuro-SysMed, Haukeland University Hospital and the University of Bergen.
+
+Her research focuses on the anti-inflammatory potential of mesenchymal stem cell (MSC)-derived extracellular vesicles (EVs) in multiple sclerosis. Her doctoral project investigates how these vesicles may influence chronic inflammation, with particular attention to microglia and disease progression.
+
+Her [first-author study](https://doi.org/10.1371/journal.pone.0347119) investigated the shift of bone marrow MSCs towards neural- and glial-like states. This work combines cell culture, proliferation and migration assays, immunofluorescence imaging, and mass-spectrometry-based protein profiling.
+
+Her contributions span experimental methodology, quantitative analysis, data curation, and computational work. Within Neuropia, she connects studies of MSC biology with research on potential cell- and EV-based treatments for multiple sclerosis.
 
 {% if member.email or member.linkedin or member.orcid or member.website %}
 <h2>Links</h2>
