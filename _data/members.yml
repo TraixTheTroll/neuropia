@@ -47,9 +47,9 @@
 - name: Christian Grønås
   initials: CG
   slug: christian-gronas
-  image: people/cg.jpg
-  image_width: 1310
-  image_height: 1055
+  image: people/cg-updated.jpg
+  image_width: 3072
+  image_height: 3840
   role: Researcher
 - name: Anna-Maria Rasmussen Eitrheim
   initials: AMRE
