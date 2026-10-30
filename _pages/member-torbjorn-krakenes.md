@@ -22,7 +22,13 @@ nav: false
 
 ## About
 
-Torbjørn Kråkenes is a senior researcher and co-leads Neuropia with Christopher Elnan Kvistad. He is the principal investigator responsible for the group’s laboratory-based basic research.
+Torbjørn Kråkenes holds a BSc in Nanotechnology and an MSc in Medical Cell Biology from the University of Bergen. He completed his PhD there in 2021, investigating the proteins recognised by Yo autoantibodies in paraneoplastic cerebellar degeneration.
+
+He is a senior researcher at Neuro-SysMed, Haukeland University Hospital, and co-leads Neuropia with Christopher Elnan Kvistad. As the principal investigator for the group’s laboratory-based basic research, he leads its experimental work on potential approaches to neural repair and regeneration.
+
+His research focuses on neuronal injury, neuroprotection, and the therapeutic potential of mesenchymal stem cells (MSCs) and their extracellular vesicles (EVs) in multiple sclerosis. His work spans neuronal cell culture, protein localisation, and preclinical animal studies, including investigations of MSCs in models of demyelination.
+
+He has also contributed to the SMART-MS clinical trial of mesenchymal stem cells in progressive multiple sclerosis. This work connects his background in experimental neurobiology with the clinical evaluation of potential regenerative therapies.
 
 {% if member.email or member.linkedin or member.orcid or member.website %}
 <h2>Links</h2>
