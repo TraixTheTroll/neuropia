@@ -2,6 +2,8 @@
 
 The website uses al-folio with group content stored separately from its example content. The homepage follows the supplied `neuropia-main/index.html` design: dark navy, Cormorant Garamond and Inter fonts, teal/gold accents, a floating logo, animated particles, and translucent panels. Navigation scrolls to About, Research, People, Publications, and Contact. Every section stays open; there are no accordion controls. Existing standalone page and member URLs remain available. The prototype is the visual reference; repository content remains the maintained source.
 
+The homepage About and Research paragraphs, research-card descriptions, and Publications introduction use justified text with a naturally aligned last line and automatic hyphenation. These rules are scoped to those blocks; headings, publication entries, People cards, and member biographies retain their existing alignment. The shared Contact introduction welcomes collaboration, research questions, and other enquiries, and keeps Christopher Elnan Kvistad as the contact person.
+
 ## Members
 
 Edit `_data/members.yml`. Entries appear in file order. Current roles were supplied by the group; individual affiliations are not assigned. Optional fields are `role`, `bio`, `image`, `email`, `orcid`, `linkedin`, and `website`. Store photos under `assets/img/` and set `image` to the filename. Supply the bare ORCID identifier and complete HTTPS URLs for `linkedin` and `website`. Initials appear when no photo is supplied. Current member images are in `assets/img/people/`. Supplied TIFF and PNG files were converted to JPEG at their original pixel dimensions; supplied WebP images are used unchanged. The source images remain unchanged in the supplied folder.
