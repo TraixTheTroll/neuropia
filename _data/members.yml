@@ -38,9 +38,9 @@
 - name: Andrea Gremes
   initials: AG
   slug: andrea-gremes
-  image: people/ag.jpg
-  image_width: 519
-  image_height: 519
+  image: people/ag-updated.jpg
+  image_width: 937
+  image_height: 1280
   role: Researcher
 - name: Christian Grønås
   initials: CG

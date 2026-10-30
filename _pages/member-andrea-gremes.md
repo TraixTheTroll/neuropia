@@ -22,7 +22,13 @@ nav: false
 
 ## About
 
-A short biography and research interests will be added here.
+Andrea Gremes holds a Master’s degree in Pharmacy from the University of Innsbruck, Austria. For his Master’s thesis, he conducted preclinical studies investigating a gene therapy approach for mesial temporal lobe epilepsy.
+
+Over the past two years, Andrea has further expanded his expertise through his research on Parkinson’s disease at Neurosymed, gaining valuable insights into disease-related mechanisms and neuronal dysregulation pathways implicated in neurodegenerative disorders.
+
+He brings a multidisciplinary background, complemented by hands-on experience in animal experimentation, cell culture, and transcriptomics techniques, including spatial transcriptomics and single-nucleus RNA sequencing.
+
+Currently, Andrea is undertaking a one-year research internship focused on the production and evaluation of lipid nanoparticles (LNPs) encapsulating therapeutic payloads as potential disease-modifying strategies for neurodegenerative disorders.
 
 {% if member.email or member.linkedin or member.orcid or member.website %}
 <h2>Links</h2>
