@@ -179,6 +179,15 @@ p {
   line-height: 1.65;
   font-size: 1.02rem;
 }
+#about > .section-content > p,
+#research > .section-content > p,
+#research .card p,
+#publications > .section-content > p {
+  text-align: justify;
+  text-align-last: start;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
 .focus-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
