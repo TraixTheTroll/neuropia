@@ -12,17 +12,18 @@
 - name: Torbjørn Kråkenes
   initials: TK
   slug: torbjorn-krakenes
-  image: people/tk-33c7a17f.jpg
-  image_width: 600
-  image_height: 336
+  image: people/tk-updated.jpg
+  image_width: 619
+  image_height: 811
   role: Principal investigator (basic research)
   orcid: 0000-0002-4031-5360
+  website: https://www4.uib.no/finn-ansatte/torbjorn.krakenes
 - name: Marie Ytterdal
   initials: MY
   slug: marie-ytterdal
-  image: people/my.jpg
-  image_width: 415
-  image_height: 739
+  image: people/my-updated.jpg
+  image_width: 400
+  image_height: 400
   role: PhD candidate
   orcid: 0009-0004-6032-7600
 - name: Casper Eugen Sandvik
@@ -59,8 +60,9 @@
 - name: Lars Bø
   initials: LB
   slug: lars-bo
-  image: people/lb.jpg
-  image_width: 689
-  image_height: 394
+  image: people/lb-updated.webp
+  image_width: 770
+  image_height: 962
   role: Professor
   orcid: 0000-0001-8675-4433
+  website: https://www4.uib.no/en/find-employees/lars.bo

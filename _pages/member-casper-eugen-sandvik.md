@@ -22,7 +22,13 @@ nav: false
 
 ## About
 
-Casper holds a BSc in biomedicine from Høyskolen Kristiania in Oslo and an MSc in biomedicine from the University of Bergen (UiB). Casper is currently pursuing a PhD at UiB.
+Casper Eugen Sandvik holds a Master’s degree in Biomedicine from the University of Bergen. His Master’s thesis investigated the transdifferentiation of mesenchymal stem cells (MSCs) and the characterisation of the extracellular vesicles (EVs) they release.
+
+Casper is currently pursuing a PhD at Neuro-SysMed, Haukeland University Hospital and the University of Bergen, where his research centres on MSC-derived small extracellular vesicles (sEVs) as potential therapeutics for multiple sclerosis and other neurodegenerative disorders.
+
+He brings a multidisciplinary background, with hands-on experience in cell culture and cell-based assays, immunostaining, and animal studies. His EV expertise covers isolation and characterisation (ultracentrifugation, EXODUS, nanoparticle tracking analysis, transmission electron microscopy) and multi-omics (DIA LC-MS/MS proteomics, miRNA sequencing). He complements this with data analysis and bioinformatics skills in Python, R, and bash.
+
+Currently, Casper is expanding into lipid nanoparticle (LNP) and EV-based delivery strategies targeting immune and neural cells.
 
 ## Research interests
 
