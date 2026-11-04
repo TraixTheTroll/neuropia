@@ -23,7 +23,9 @@ nav: false
 ## About
 
 Anna-Maria Rasmussen Eitrheim has a Bachelor's degree in Molecular Biology from the University of Bergen (UiB) and is now doing a Master's in Biomedicine at UiB, writing her thesis at Neuro-SysMed, Haukeland University Hospital.
+
 Her project examines at whether small extracellular vesicles (sEVs) from bone marrow mesenchymal stem cells (MSCs) could help decrease inflammation and/or support ​repair in multiple sclerosis (MS). She compares sEVs from MSC’s of MS patients and of healthy donors, looking at their molecular content and their effect on nerve cells.
+
 She has been trained in cell culture and EV isolation, and has some previous experience with western blotting and preparing protein samples for mass spectrometry."
 
 {% if member.email or member.linkedin or member.orcid or member.website %}
