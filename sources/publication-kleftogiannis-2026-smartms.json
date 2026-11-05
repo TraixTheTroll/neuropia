@@ -1,0 +1,106 @@
+{
+  "verified_on": "2026-11-05",
+  "bibtex_key": "kleftogiannis2026smartmsprofiling",
+  "sources": {
+    "publisher": "https://link.springer.com/article/10.1186/s12987-026-00886-3",
+    "crossref": "https://api.crossref.org/works/10.1186/s12987-026-00886-3",
+    "pubmed_query": "10.1186/s12987-026-00886-3[AID]"
+  },
+  "doi": "10.1186/s12987-026-00886-3",
+  "title": "Intrathecal mesenchymal stem cell therapy in progressive multiple sclerosis: integrated blood and CSF profiling in the SMART-MS randomized trial",
+  "journal": "Fluids and Barriers of the CNS",
+  "published_online": [2026, 9, 29],
+  "authors": [
+    {
+      "given": "Dimitrios",
+      "family": "Kleftogiannis"
+    },
+    {
+      "given": "Sonia",
+      "family": "Gavasso"
+    },
+    {
+      "given": "Live Egeland",
+      "family": "Eidem"
+    },
+    {
+      "given": "Jonas Bull",
+      "family": "Haugsøen"
+    },
+    {
+      "given": "Trygve",
+      "family": "Holmøy"
+    },
+    {
+      "given": "Linn",
+      "family": "Steffensen"
+    },
+    {
+      "given": "Kristin",
+      "family": "Wesnes"
+    },
+    {
+      "given": "Markus",
+      "family": "Rojewski"
+    },
+    {
+      "given": "Harald",
+      "family": "Barsnes"
+    },
+    {
+      "given": "Niyaz",
+      "family": "Al-Sharabi"
+    },
+    {
+      "given": "Samih",
+      "family": "Mohamed-Ahmed"
+    },
+    {
+      "given": "Marie",
+      "family": "Ytterdal"
+    },
+    {
+      "given": "Casper Eugen",
+      "family": "Sandvik"
+    },
+    {
+      "given": "Øivind",
+      "family": "Torkildsen"
+    },
+    {
+      "given": "Hubert",
+      "family": "Schrezenmeier"
+    },
+    {
+      "given": "Kamal",
+      "family": "Mustafa"
+    },
+    {
+      "given": "Frode Steingrimsen",
+      "family": "Berven"
+    },
+    {
+      "given": "Lars",
+      "family": "Bø"
+    },
+    {
+      "given": "Torbjørn",
+      "family": "Kråkenes"
+    },
+    {
+      "given": "Christopher Elnan",
+      "family": "Kvistad"
+    }
+  ],
+  "publication_status": "Early accepted publication; awaiting final Version of Record, per publisher",
+  "volume": null,
+  "issue": null,
+  "pages": null,
+  "article_number": null,
+  "pmid": null,
+  "notes": [
+    "Publisher and Crossref metadata checked against each other.",
+    "PubMed DOI query returned zero records on the verification date.",
+    "All 20 authors retained in source order."
+  ]
+}
