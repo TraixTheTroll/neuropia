@@ -83,11 +83,14 @@ nav a:hover {
   width: 380px;
   height: auto;
   max-width: 80vw;
+  margin-bottom: 1rem;
+}
+.logo,
+.neuropia-group-photo {
   filter: drop-shadow(0 0 40px rgba(46, 196, 182, 0.5));
   animation:
     float 7s ease-in-out infinite,
     glow 4s ease-in-out infinite alternate;
-  margin-bottom: 1rem;
 }
 @keyframes float {
   0%,
@@ -217,6 +220,13 @@ p {
   font-size: 1.35rem;
   margin-bottom: 0.5rem;
   color: #fff;
+}
+.neuropia-group-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2rem auto 2.5rem;
+  border-radius: 12px;
 }
 .people-grid {
   display: grid;
