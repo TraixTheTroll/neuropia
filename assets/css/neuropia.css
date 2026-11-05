@@ -109,6 +109,15 @@ nav a:hover {
     filter: drop-shadow(0 0 55px rgba(255, 159, 28, 0.55));
   }
 }
+@keyframes group-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(0.25deg);
+  }
+}
 .hero h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(3rem, 7vw, 6rem);
@@ -227,6 +236,14 @@ p {
   height: auto;
   margin: 2rem auto 2.5rem;
   border-radius: 12px;
+  border: 1px solid rgba(46, 196, 182, 0.3);
+  animation-name: group-float, glow;
+}
+.neuropia-people-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
 }
 .people-grid {
   display: grid;

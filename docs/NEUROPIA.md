@@ -14,7 +14,7 @@ Member profiles use About, optional Research interests, and optional Links secti
 
 The People cards use the supplied design’s circular thumbnails and open each full profile. Member pages share the animated shell and show the complete photo at its natural aspect ratio. Typography follows the supplied design, replacing the earlier bold al-folio headings.
 
-The shared People section displays `assets/img/people/group-photo.jpg` above the individual portraits on the homepage and `/people/`. The supplied group photo keeps its full aspect ratio, uses 12-pixel rounded corners, and shares the homepage logo’s floating motion and teal-to-gold glow. Reduced-motion preferences disable the animation.
+The shared People section displays `assets/img/people/group-photo.jpg` above the individual portraits on the homepage and `/people/`, with a “Meet the team” heading introducing the portraits. The supplied group photo keeps its full aspect ratio, uses 12-pixel rounded corners and a thin teal border, and shares the homepage logo’s teal-to-gold glow. Its gentler floating motion peaks at 4 pixels upward and 0.25 degrees of rotation over a seven-second cycle. Reduced-motion preferences disable the animation.
 
 ## Affiliations
 
