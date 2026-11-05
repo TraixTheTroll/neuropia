@@ -33,6 +33,12 @@ Search responses, per-record screening decisions, and metadata for the eight sel
 | [37943848](https://pubmed.ncbi.nlm.nih.gov/37943848/) | 2023 | MSCs in a mouse demyelination model; preclinical study                | [10.1371/journal.pone.0293908](https://doi.org/10.1371/journal.pone.0293908) |
 | [35711260](https://pubmed.ncbi.nlm.nih.gov/35711260/) | 2022 | MSC clinical safety and efficacy; systematic review and meta-analysis | [10.3389/fneur.2022.891514](https://doi.org/10.3389/fneur.2022.891514)       |
 
+## User-supplied addition verified 5 November 2026
+
+Added [Kleftogiannis et al., “Intrathecal mesenchymal stem cell therapy in progressive multiple sclerosis: integrated blood and CSF profiling in the SMART-MS randomized trial”](https://link.springer.com/article/10.1186/s12987-026-00886-3), DOI [10.1186/s12987-026-00886-3](https://doi.org/10.1186/s12987-026-00886-3), at the group's request. The publisher and [Crossref metadata](https://api.crossref.org/works/10.1186/s12987-026-00886-3) agree on the title, full ordered list of 20 authors, journal, and online publication date of 29 September 2026. This is a clinical study using blood and CSF profiling from the SMART-MS trial, listed separately from the primary clinical trial publication.
+
+The publisher currently labels the article as an early, accepted publication awaiting the final Version of Record. No volume, issue, page range, or article number is supplied in either source, so these fields are omitted. A DOI search through PubMed E-utilities returned no record at verification; no PMID or PubMed link was assigned. The verified metadata snapshot is saved in `publication-kleftogiannis-2026-smartms.json`. The original eight selected entries are unchanged.
+
 ## Editorial safeguards
 
 - Roles come from the group, not inferred author order or affiliations.
