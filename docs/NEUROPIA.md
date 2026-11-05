@@ -32,7 +32,7 @@ Research themes are introduced on the homepage and in `_pages/research.md`. Keep
 
 ## Build and deployment
 
-The current project site uses `url: https://traixthetroll.github.io` and `baseurl: /neuropia`. Use `relative_url` for internal links so the project prefix is preserved. Run `bundle exec jekyll build` with the configured base URL. Merging changes into `main` triggers the existing GitHub Pages deployment.
+The site uses `url: https://neuropia.no` and an empty `baseurl`, serving pages and assets from the domain root. Keep `CNAME` set to `neuropia.no` in the source repository so deployments preserve the custom domain. Use `relative_url` for internal links. Run `bundle exec jekyll build` with the configured base URL; local previews are at `http://localhost:4000/`. Merging changes into `main` triggers the existing GitHub Pages deployment.
 
 Use `layout: neuropia` on public pages. `_layouts/neuropia.liquid` loads the shared navigation, stylesheet, animation, canonical URL, description, favicon, and footer. Homepage content is in `_pages/about.md`; member pages retain their existing Markdown biographies. Shared People and Contact content is rendered by `_includes/neuropia-people.liquid` and `_includes/neuropia-contact.liquid`.
 
