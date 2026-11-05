@@ -1,3 +1,15 @@
+<figure class="neuropia-group-figure">
+  <img
+    class="neuropia-group-photo"
+    src="{{ '/assets/img/people/group-photo.jpg' | relative_url }}"
+    alt="Members of the Neuropia research group outside Gamle Hovedbygg"
+    width="1600"
+    height="1097"
+    loading="lazy"
+    decoding="async"
+  >
+</figure>
+
 <div class="people-grid">
   {% for member in site.data.members %}
     {% assign profile_path = '/people/' | append: member.slug | append: '/' %}

@@ -14,6 +14,8 @@ Member profiles use About, optional Research interests, and optional Links secti
 
 The People cards use the supplied design’s circular thumbnails and open each full profile. Member pages share the animated shell and show the complete photo at its natural aspect ratio. Typography follows the supplied design, replacing the earlier bold al-folio headings.
 
+The shared People section displays `assets/img/people/group-photo.jpg` above the individual portraits on the homepage and `/people/`. The supplied group photo keeps its full aspect ratio, uses 12-pixel rounded corners, and shares the homepage logo’s floating motion and teal-to-gold glow. Reduced-motion preferences disable the animation.
+
 ## Affiliations
 
 Edit `_data/affiliations.yml`. The homepage and Contact page read the same list. These describe group affiliations, not affiliations assigned to each individual member. Neuro-SysMed’s `url` is used only for its link in the homepage introduction. Names in the Affiliations section remain plain text.
