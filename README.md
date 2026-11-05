@@ -2,7 +2,7 @@
 
 This repository contains the public website for **Neuropia**, a research group in Bergen, Norway. It introduces our research, current members, selected publications, and affiliations.
 
-**Website:** [traixthetroll.github.io/neuropia](https://traixthetroll.github.io/neuropia/)
+**Website:** [neuropia.no](https://neuropia.no/)
 
 **Repository:** [TraixTheTroll/neuropia](https://github.com/TraixTheTroll/neuropia)
 
@@ -53,7 +53,7 @@ npm ci
 bundle exec jekyll serve
 ```
 
-Open **http://localhost:4000/neuropia/**. Keep the configured project prefix when previewing or building.
+Open **http://localhost:4000/**. The custom domain serves the site from its root, with an empty `baseurl`.
 
 For content or styling changes:
 
@@ -71,19 +71,19 @@ Public ORCID journal articles are checked daily and proposed as bibliography add
 The production configuration is:
 
 ```yaml
-url: https://traixthetroll.github.io
-baseurl: /neuropia
+url: https://neuropia.no
+baseurl: ""
 ```
 
 Eligible changes merged into `main` trigger **Deploy site**, which builds `_site` and publishes it to the `gh-pages` branch. GitHub Pages then publishes that branch. Verify both stages before checking the live site. README-only changes are excluded from the deployment workflow.
 
-Use Jekyll’s `relative_url` filter for internal links and assets so the `/neuropia` prefix is preserved. Edit source files rather than generated `_site` output or the `gh-pages` branch.
+Keep the source `CNAME` file set to `neuropia.no`. Use Jekyll’s `relative_url` filter for internal links and assets. Edit source files rather than generated `_site` output or the `gh-pages` branch.
 
 ## Notes for maintainers and AI agents
 
 Read [AGENTS.md](AGENTS.md) and [the Neuropia maintenance guide](docs/NEUROPIA.md) before making changes. This repository is a customized research group website. Preserve its group identity, navigation, member profiles, branding, publication provenance, and scientific qualifications.
 
-Some inherited documentation and agent instructions describe the generic starter and use `/al-folio` as an example base URL. For this website, use `_config.yml` and the Neuropia maintenance guide: the correct base URL is **`/neuropia`**. Example posts, pages, and bibliographies retained in the repository are excluded from publication; group publications use `neuropia.bib`.
+Some inherited documentation and agent instructions describe the generic starter and use `/al-folio` as an example base URL. For this website, use `_config.yml` and the Neuropia maintenance guide: the correct public URL is **`https://neuropia.no`**, with an empty `baseurl`. Example posts, pages, and bibliographies retained in the repository are excluded from publication; group publications use `neuropia.bib`.
 
 Keep content edits in the files listed above. Neuropia uses custom layouts and includes for its supplied design while retaining the Jekyll and publication tooling. The inherited `lint:style-contract` checks the upstream starter and intentionally rejects user-site custom layouts; it is not a check for this website. Consult [architecture](docs/ARCHITECTURE.md) and [ownership boundaries](docs/BOUNDARIES.md) before changing them. Plugin changes must keep `Gemfile` and `_config.yml` aligned. The Neuropia templates have distinct names and do not shadow gem-owned files. Run `bundle exec al-folio upgrade overrides audit` when adding or changing layouts.
 
