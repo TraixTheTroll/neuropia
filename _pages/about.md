@@ -8,7 +8,7 @@ nav: false
 ---
 
 <header class="hero">
-  <img src="{{ '/assets/img/neuropia-logo.png' | relative_url }}" width="3000" height="3000" alt="Neuropia logo" class="logo">
+  <img src="{{ '/assets/img/neuropia-logo-lossless.webp' | relative_url }}" width="3000" height="3000" alt="Neuropia logo" class="logo">
   <h1>NEUROPIA</h1>
   <div class="subtitle">Research group · Bergen, Norway</div>
   <p class="tagline">Exploring the therapeutic potential of mesenchymal stromal cells, extracellular vesicles and lipid nanoparticles in neurological disease — from cellular cultures to clinical translation.</p>
