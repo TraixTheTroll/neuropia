@@ -32,7 +32,7 @@ The initial publication cutoff is **1 January 2026**, configured as `since` in `
 
 On GitHub, open **Actions → Sync ORCID publications → Run workflow**, select `main`, and run it. Enable **dry_run** to generate only a summary without modifying the bibliography or opening a PR. The **sync** job summary contains the report, including coverage when no additions are found.
 
-The schedule and manual runs operate only on `main`. Pull requests touching the importer or its inputs run the network-free tests without write permissions. Normal GitHub PR checks are not triggered by PRs created with `GITHUB_TOKEN`; the sync job therefore builds proposed additions with Jekyll before creating or updating their PR. A maintainer's merge triggers the normal deployment.
+The schedule and manual runs operate only on `main`. Pull requests touching the importer or its inputs run the network-free tests without write permissions. Normal GitHub PR checks are not triggered by PRs created with `GITHUB_TOKEN`; the sync job therefore runs the production build, static site checks, and Chromium/WebKit browser checks before creating or updating their PR. A maintainer's merge triggers the normal deployment.
 
 GitHub's **Allow GitHub Actions to create and approve pull requests** setting must be enabled for PR creation. The workflow requests only repository contents and pull-request write permissions and never approves a PR or enables automatic merging. It uses GitHub's built-in token, so no personal access token is required. As with other scheduled Actions, GitHub can delay runs or disable scheduling on inactive public repositories; inspect Actions if expected scans stop.
 
@@ -49,12 +49,12 @@ python3 -m venv .venv-publications
 
 Run without `--dry-run` to append proposed entries locally. `--report /path/to/report.md` saves the review report. The importer validates the complete candidate bibliography before writing. An ORCID/API outage fails the scan before any publication additions are written; missing or invalid Crossref metadata is reported without removing existing entries.
 
-After actual additions, format the generated provenance and build the site:
+After actual additions, format the generated provenance:
 
 ```bash
 npx prettier sources/orcid-sync/imports.json --write
-npm run lint:prettier
-JEKYLL_ENV=production bundle exec jekyll build
 ```
+
+Then run the [complete validation sequence](../README.md#local-preview-and-checks), including the production build, static checks, and browser checks. This matches the candidate-build checks in the workflow.
 
 The implementation is in `bin/sync_orcid_publications.py`, its configuration in `_data/publication_sync.yml`, and its regression tests in `test/test_orcid_publications.py`. Source records and provenance are excluded from the public site. The original `_bibliography/neuropia.bib` remains the single bibliography used by the website.
