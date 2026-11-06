@@ -43,7 +43,7 @@ See [Maintaining the Neuropia website](docs/NEUROPIA.md) for editing details, im
 
 ## Local preview and checks
 
-The site is built with Jekyll and pinned Ruby plugin gems. Install Ruby/Bundler, Node.js/npm, ImageMagick, and Python with `nbconvert` as described in the [installation guide](docs/INSTALL.md). Dependency versions are recorded in `Gemfile.lock` and `package-lock.json`; the deployment environment is defined in [the workflow](.github/workflows/deploy.yml).
+The site is built with Jekyll and pinned Ruby plugin gems. Use Ruby **3.4** and Node.js **24 LTS**, matching `.ruby-version` and `.node-version`. ImageMagick is needed only when regenerating portrait thumbnails. Python is needed only for the separate ORCID publication tools. Dependency versions are recorded in `Gemfile.lock` and `package-lock.json`; the deployment environment is defined in [the workflow](.github/workflows/deploy.yml).
 
 From the repository root:
 
@@ -59,7 +59,10 @@ For content or styling changes:
 
 ```bash
 npm run lint:prettier
-JEKYLL_ENV=production bundle exec jekyll build
+npm run build
+npm run check:site
+npx playwright install chromium webkit
+npm run test:site
 ```
 
 If gems are installed locally under `vendor/bundle`, prefix Bundler commands with `BUNDLE_PATH=vendor/bundle`.
@@ -75,7 +78,7 @@ url: https://neuropia.no
 baseurl: ""
 ```
 
-Eligible changes merged into `main` trigger **Deploy site**, which builds `_site` and publishes it to the `gh-pages` branch. GitHub Pages then publishes that branch. Verify both stages before checking the live site. README-only changes are excluded from the deployment workflow.
+Changes merged into `main` trigger **Deploy site**, which builds `_site`, checks all pages and local links, runs Chromium/WebKit browser checks, and publishes only after those checks pass. It publishes to the `gh-pages` branch. GitHub Pages then publishes that branch. Verify both stages before checking the live site.
 
 Keep the source `CNAME` file set to `neuropia.no`. Use Jekyll’s `relative_url` filter for internal links and assets. Edit source files rather than generated `_site` output or the `gh-pages` branch.
 
@@ -83,7 +86,7 @@ Keep the source `CNAME` file set to `neuropia.no`. Use Jekyll’s `relative_url`
 
 Read [AGENTS.md](AGENTS.md) and [the Neuropia maintenance guide](docs/NEUROPIA.md) before making changes. This repository is a customized research group website. Preserve its group identity, navigation, member profiles, branding, publication provenance, and scientific qualifications.
 
-Some inherited documentation and agent instructions describe the generic starter and use `/al-folio` as an example base URL. For this website, use `_config.yml` and the Neuropia maintenance guide: the correct public URL is **`https://neuropia.no`**, with an empty `baseurl`. Example posts, pages, and bibliographies retained in the repository are excluded from publication; group publications use `neuropia.bib`.
+Some inherited documentation and agent instructions describe the generic starter and use `/al-folio` as an example base URL. For this website, use `_config.yml` and the Neuropia maintenance guide: the correct public URL is **`https://neuropia.no`**, with an empty `baseurl`. Unused example posts, pages, media, bibliographies, plugins and upstream-only workflows have been removed; group publications use `neuropia.bib`.
 
 Keep content edits in the files listed above. Neuropia uses custom layouts and includes for its supplied design while retaining the Jekyll and publication tooling. The inherited `lint:style-contract` checks the upstream starter and intentionally rejects user-site custom layouts; it is not a check for this website. Consult [architecture](docs/ARCHITECTURE.md) and [ownership boundaries](docs/BOUNDARIES.md) before changing them. Plugin changes must keep `Gemfile` and `_config.yml` aligned. The Neuropia templates have distinct names and do not shadow gem-owned files. Run `bundle exec al-folio upgrade overrides audit` when adding or changing layouts.
 
