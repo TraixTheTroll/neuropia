@@ -15,6 +15,7 @@ on:
       - "assets/**"
       - "Gemfile"
       - "Gemfile.lock"
+      - ".ruby-version"
       - "test/integration_upgrade_cli.sh"
       - ".github/workflows/upgrade-check.yml"
   pull_request:
@@ -31,12 +32,13 @@ on:
       - "assets/**"
       - "Gemfile"
       - "Gemfile.lock"
+      - ".ruby-version"
       - "test/integration_upgrade_cli.sh"
       - ".github/workflows/upgrade-check.yml"
 
 jobs:
   upgrade-check:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v7
@@ -44,7 +46,6 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3"
           bundler-cache: true
 
       - name: Run upgrade audit 🧪

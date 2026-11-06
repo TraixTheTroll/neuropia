@@ -2,7 +2,7 @@
 
 This repository is the Neuropia user site, not the upstream al-folio starter. Its public URL is `https://neuropia.no`, with an empty `baseurl`; local previews use `http://localhost:4000/`. The group-supplied animated design uses site-owned `_layouts/neuropia*.liquid`, `_includes/neuropia-*.liquid`, `assets/css/neuropia.css`, and `assets/js/neuropia.js`. These custom files are intentional under the user-site exception documented below. Preserve the always-open homepage sections, clickable member profiles, maintained member data, and ORCID publication review workflow. See [docs/NEUROPIA.md](docs/NEUROPIA.md) for the current editing guide.
 
-The inherited starter instructions below describe upstream architecture. Its `lint:style-contract` is an upstream-only check and rejects the custom layouts supported on user sites. For Neuropia changes, run Prettier, the production Jekyll build, relevant tests, and the upgrade/override audits. Do not use the upstream `/al-folio` example base URL.
+The inherited starter instructions below describe upstream architecture. Its `lint:style-contract` is an upstream-only check and rejects the custom layouts supported on user sites. For Neuropia changes, use the shared `.ruby-version` and `.node-version`, then run Prettier, `npm run build`, `npm run check:site`, `npm run test:site`, and the upgrade/override audits. The inherited upstream commands below are historical guidance; removed example/Docker/plugin-integration workflows do not apply to this site. Do not use the upstream `/al-folio` example base URL.
 
 # Inherited al-folio guidelines (v1.x)
 

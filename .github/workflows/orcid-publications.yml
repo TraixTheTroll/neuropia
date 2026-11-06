@@ -18,6 +18,15 @@ on:
       - "_data/publication_sync.yml"
       - "_data/members.yml"
       - "_bibliography/neuropia.bib"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "_config.yml"
+      - ".ruby-version"
+      - ".node-version"
+      - "package.json"
+      - "package-lock.json"
+      - "bin/check_site.rb"
+      - "test/site/**"
 
 permissions:
   contents: read
@@ -28,7 +37,7 @@ concurrency:
 
 jobs:
   tests:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
@@ -43,7 +52,7 @@ jobs:
   sync:
     needs: tests
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     permissions:
       contents: write
@@ -74,12 +83,11 @@ jobs:
       - uses: ruby/setup-ruby@v1
         if: steps.scan.outputs.added != '0' && inputs.dry_run != true
         with:
-          ruby-version: "3.3.5"
           bundler-cache: true
       - uses: actions/setup-node@v7
         if: steps.scan.outputs.added != '0' && inputs.dry_run != true
         with:
-          node-version: "20"
+          node-version-file: .node-version
           cache: npm
       - name: Build candidate bibliography with Jekyll
         if: steps.scan.outputs.added != '0' && inputs.dry_run != true
@@ -87,11 +95,12 @@ jobs:
           JEKYLL_ENV: production
         run: |
           npm ci
-          sudo apt-get update && sudo apt-get install -y imagemagick
-          python -m pip install nbconvert
           npx prettier sources/orcid-sync/imports.json --write
           npm run lint:prettier
-          bundle exec jekyll build
+          npm run build
+          npm run check:site
+          npx playwright install --with-deps chromium webkit
+          npm run test:site
       - name: Create or update the publication review PR
         if: inputs.dry_run != true
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
