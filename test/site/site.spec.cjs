@@ -109,16 +109,37 @@ test("missing page stays visible and returns home on request", async ({ page }) 
 });
 
 test("animations are preserved and reduced motion works", async ({ page }) => {
+  // Resizing or visibility changes can redraw a static frame.
+  // Check continued scheduling instead of comparing canvas pixels.
+  await page.addInitScript(() => {
+    const requestFrame = window.requestAnimationFrame.bind(window);
+    const cancelFrame = window.cancelAnimationFrame.bind(window);
+    const pending = new Set();
+    window.__neuropiaPendingFrames = pending;
+    window.requestAnimationFrame = (callback) => {
+      const id = requestFrame((time) => {
+        pending.delete(id);
+        callback(time);
+      });
+      pending.add(id);
+      return id;
+    };
+    window.cancelAnimationFrame = (id) => {
+      pending.delete(id);
+      cancelFrame(id);
+    };
+  });
   await page.emulateMedia({ reducedMotion: "no-preference" });
   await page.goto("/");
+  await expect(page.locator(".back-to-top")).toHaveClass(/is-ready/);
+  await expect.poll(() => page.evaluate(() => window.__neuropiaPendingFrames.size)).toBeGreaterThan(0);
   expect(await page.locator(".logo").evaluate((element) => getComputedStyle(element).animationName)).toBe("float, glow");
   expect(await page.locator(".neuropia-group-photo").evaluate((element) => getComputedStyle(element).animationName)).toBe("group-float, glow");
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect.poll(() => page.locator(".logo").evaluate((element) => getComputedStyle(element).animationName)).toBe("none");
-  await page.waitForTimeout(100);
-  const first = await page.locator("#canvas").evaluate((element) => element.toDataURL());
-  await page.waitForTimeout(100);
-  expect(await page.locator("#canvas").evaluate((element) => element.toDataURL())).toBe(first);
+  await expect.poll(() => page.evaluate(() => window.__neuropiaPendingFrames.size)).toBe(0);
+  await page.waitForTimeout(200);
+  expect(await page.evaluate(() => window.__neuropiaPendingFrames.size)).toBe(0);
 });
 
 test("skip link provides keyboard access to content", async ({ page }) => {
