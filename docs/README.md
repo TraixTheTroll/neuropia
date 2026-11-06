@@ -1,36 +1,25 @@
-# al-folio Documentation
+# Neuropia documentation
 
-These guides cover the `al-folio` v1.x starter and its pluginized runtime.
+Start with the guides for this website:
 
-## User Guides
+- [Repository README](../README.md): current content map, runtime versions, local preview, validation, and deployment.
+- [Maintaining Neuropia](NEUROPIA.md): member profiles, thumbnail regeneration/crops, the group photograph, publications, branding, animations, and site checks.
+- [Publication synchronization](PUBLICATION_SYNC.md): ORCID coverage, proposal review, exclusions, and manual runs.
+- [Publication provenance](../sources/README.md): source searches, identity checks, and editorial decisions.
+- [Agent guidelines](../AGENTS.md): scope and requirements for automated edits.
 
-- [Quick Start](QUICKSTART.md): create a site from the template and get it live quickly.
-- [Installing and Deploying](INSTALL.md): Docker, local setup, GitHub Pages, Netlify, and upgrade guidance.
-- [Customizing](CUSTOMIZE.md): content, CVs, publications, layouts, local overrides, and feature configuration.
-- [FAQ](FAQ.md): common deployment, upgrade, plugin, and troubleshooting questions.
-- [Troubleshooting](TROUBLESHOOTING.md): build, deployment, styling, and content debugging.
-- [Analytics](ANALYTICS.md): analytics provider setup.
-- [SEO](SEO.md): search-engine and social preview setup.
+## Inherited al-folio reference
 
-## Maintainer Guides
+The other guides describe the original `al-folio` v1.x starter and its plugin architecture. They may mention example content, Docker files, workflows, plugin catalogs, or commands that Neuropia no longer includes. Use the guides above for this site's setup and checks. Neuropia uses `https://neuropia.no`, an empty `baseurl`, and the custom `neuropia` layouts.
 
-- [Architecture](ARCHITECTURE.md): how the starter and its plugin gems fit together, the failure modes that produce no error message, the v1 config contract, and local overrides.
-- [Ownership Boundaries](BOUNDARIES.md): starter-vs-plugin ownership, PR routing, and release responsibilities.
-- [Contributing](CONTRIBUTING.md): contributor workflow, validation, and agent guidance.
-- [Bootstrap skill](../.agents/skills/al-folio-bootstrap/SKILL.md): agent workflow for new v1 sites.
-- [Migration skill](../.agents/skills/al-folio-v1-migration/SKILL.md): agent workflow for customized fork migrations and override audits.
+These inherited references remain useful when investigating the underlying framework or deliberately adding a feature:
 
-## v1 Plugin System
+- [Architecture](ARCHITECTURE.md): core runtime, configuration contracts, and local overrides.
+- [Ownership boundaries](BOUNDARIES.md): gem-owned versus site-owned behavior.
+- [Customization](CUSTOMIZE.md): upstream configuration and feature background.
+- [Troubleshooting](TROUBLESHOOTING.md): general Jekyll/plugin debugging.
+- [FAQ](FAQ.md): upstream questions and known constraints.
+- [SEO](SEO.md): background on search and sharing metadata.
+- [Analytics](ANALYTICS.md): optional analytics features.
 
-`al-folio` v1.x is a thin starter. It owns site wiring, example content, documentation, integration tests, and visual tests.
-Runtime behavior belongs in Ruby gems maintained under the [`al-org-dev`](https://github.com/al-org-dev) organization.
-See [Architecture](ARCHITECTURE.md) for how the two halves connect, and [`AGENTS.md`](../AGENTS.md) if you are a coding agent.
-
-When changing feature behavior, route the work to the owning plugin repo first. Update this starter only when the change affects:
-
-- `Gemfile` dependency pins,
-- `_config.yml` plugin activation or feature flags,
-- `_data/featured_plugins.yml` catalog metadata (rendered as the [plugin catalog page](https://alshedivat.github.io/al-folio/plugins/), source [`_pages/plugins.md`](../_pages/plugins.md)),
-- documentation, examples, integration tests, or visual parity coverage.
-
-See [Ownership Boundaries](BOUNDARIES.md) for the full routing table.
+Runtime plugins come from the [al-org-dev organization](https://github.com/al-org-dev). Neuropia's namespaced templates, CSS, and JavaScript are intentional site-owned customizations. Adding or removing a plugin requires matching changes to `Gemfile` and `_config.yml`.

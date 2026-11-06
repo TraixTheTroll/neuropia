@@ -1,97 +1,34 @@
-# Agent Guidelines for Neuropia
+# Agent guidelines for Neuropia
 
-This repository is the Neuropia user site, not the upstream al-folio starter. Its public URL is `https://neuropia.no`, with an empty `baseurl`; local previews use `http://localhost:4000/`. The group-supplied animated design uses site-owned `_layouts/neuropia*.liquid`, `_includes/neuropia-*.liquid`, `assets/css/neuropia.css`, and `assets/js/neuropia.js`. These custom files are intentional under the user-site exception documented below. Preserve the always-open homepage sections, clickable member profiles, maintained member data, and ORCID publication review workflow. See [docs/NEUROPIA.md](docs/NEUROPIA.md) for the current editing guide.
+This repository is the Neuropia research group's website, adapted from al-folio. Its public URL is `https://neuropia.no`, with an empty `baseurl`. Local Jekyll previews use `http://localhost:4000/`. Read the [README](README.md) and [maintenance guide](docs/NEUROPIA.md) before editing.
 
-The inherited starter instructions below describe upstream architecture. Its `lint:style-contract` is an upstream-only check and rejects the custom layouts supported on user sites. For Neuropia changes, use the shared `.ruby-version` and `.node-version`, then run Prettier, `npm run build`, `npm run check:site`, `npm run test:site`, and the upgrade/override audits. The inherited upstream commands below are historical guidance; removed example/Docker/plugin-integration workflows do not apply to this site. Do not use the upstream `/al-folio` example base URL.
+## Maintained source
 
-# Inherited al-folio guidelines (v1.x)
+- Public pages and biographies: `_pages/`.
+- Members, roles, photo paths, thumbnail crops, and links: `_data/members.yml`.
+- Group affiliations: `_data/affiliations.yml`.
+- Selected publications: `_bibliography/neuropia.bib`.
+- Publication review configuration: `_data/publication_sync.yml`; provenance: `sources/`.
+- Site-owned templates: `_layouts/neuropia*.liquid` and `_includes/neuropia-*.liquid`.
+- Styling and animation: `assets/css/neuropia.css` and `assets/js/neuropia.js`.
+- Photos and thumbnails: `assets/img/people/`; thumbnail generator: `bin/generate_people_thumbnails.rb`.
 
-**This file is the authoritative entry point for coding agents working in this repo.** Read it before making any change. It is intentionally short and tool-neutral; it links to the one place each longer-form fact lives.
+Preserve the approved visual system, always-open main homepage sections, native scrolling, accessible publication-year toggles, member profiles, reduced-motion behavior, scientific qualifications, current photos, and original logo source. The source PNG, deployed lossless WebP, and favicon have separate roles; see the maintenance guide.
 
-`al-folio` v1.x is a **thin Jekyll starter, not a theme**. This repo owns starter wiring, example content, docs, and cross-plugin tests. All runtime — layouts, includes, Sass, Liquid tags, filters, feature JS — lives in versioned gems published under [`al-org-dev`](https://github.com/al-org-dev).
+The namespaced templates and custom CSS/JavaScript are intentional user-site customizations. They do not shadow installed gem files. Gem-owned runtime changes belong in the owning plugin; see [architecture](docs/ARCHITECTURE.md) and [ownership boundaries](docs/BOUNDARIES.md).
 
-## Route your change
+## Build and verification
 
-Find your change on the left; edit only what is on the right.
+Use the shared `.ruby-version` and `.node-version` files and the committed lockfiles. Follow the [README validation sequence](README.md#local-preview-and-checks): Prettier, production Jekyll/PurgeCSS build, static site checks, Chromium/WebKit browser checks, and upgrade/override audits. Site checks are in `bin/check_site.rb` and `test/site/`.
 
-| Your change                                                                                                              | Goes in                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| Dependency pin, plugin activation, feature flag                                                                          | this repo: `Gemfile` **and** `_config.yml` (both — see below)                                                 |
-| Example/demo content, bibliography, data files                                                                           | this repo: `_pages`, `_posts`, `_projects`, `_news`, `_teachings`, `_books`, `_data`                          |
-| Documentation                                                                                                            | this repo: `docs/` (long-form) or this file (agent rules)                                                     |
-| Cross-plugin integration test, visual parity test                                                                        | this repo: `test/integration_*.sh`, `test/visual/`                                                            |
-| Plugin catalog metadata                                                                                                  | this repo: `_data/featured_plugins.yml`                                                                       |
-| A layout, include, or Sass partial                                                                                       | the owning gem — start with `al_folio_core`                                                                   |
-| A Liquid tag or filter, or what a tag renders                                                                            | the gem that registers it — see the [delegation table](docs/ARCHITECTURE.md#wrapper-to-tag-to-gem-delegation) |
-| Feature behavior (search, math, charts, comments, cookies, icons, CV, distill, analytics, images, newsletter, citations) | that feature's gem — see [`docs/BOUNDARIES.md`](docs/BOUNDARIES.md)                                           |
-| Component/unit test for gem-owned behavior                                                                               | the owning gem, not here                                                                                      |
-| A feature with no existing owner                                                                                         | open a plugin proposal issue first, then a standalone plugin repo                                             |
+The upstream `lint:style-contract`, `test/integration_*.sh`, `test/visual/`, Docker helpers, and their old workflows were removed because they checked the starter rather than this site. Do not run them or use the upstream `/al-folio` example base URL. Other inherited guides are reference material, not the current build procedure.
 
-[`docs/BOUNDARIES.md`](docs/BOUNDARIES.md) is the authoritative area-to-gem table. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) explains how the pieces connect.
+Keep plugin dependencies in `Gemfile` aligned with activation in `_config.yml`. Preserve the required `al_folio` configuration contract while retaining the core gem, even though Neuropia uses its own visual design. Do not modify generated `_site/`, installed gems, or `gh-pages` to make source changes.
 
-## Stop sign
+## Publishing and publication review
 
-**If your change would create any of these paths in this repo, it belongs in a gem instead:**
+Changes merged into `main` run the gated publishing workflow. It builds and checks the site before updating `gh-pages`; GitHub Pages then activates that branch. Keep `CNAME` set to `neuropia.no`, use `relative_url` for internal paths, and verify both deployment stages.
 
-```
-_layouts/   _includes/   _sass/   _scripts/   assets/tailwind/   tailwind.config.js   assets/webfonts/
-```
+Preserve the ORCID discovery workflow and its human review gate. Publication proposals must not be merged automatically. See [publication synchronization](docs/PUBLICATION_SYNC.md).
 
-`npm run lint:style-contract` fails CI when any of them exists here, and it also rejects `build:css` / `build:tailwind` npm scripts. Do not add a starter-local Tailwind or CSS build pipeline.
-
-This restriction applies to **this repo only**. A user's own site created from this template _may_ legally shadow gem-owned files — see [local overrides: your site vs. this repo](docs/ARCHITECTURE.md#local-overrides-your-site-vs-this-repo).
-
-## Three failures that produce no error message
-
-Read [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md#failure-modes-that-produce-no-error-message) for the full explanation. The short version:
-
-1. **Features fail silently.** A feature renders only when its gem is loaded _and_ its flag is on _and_ the page opts in. Otherwise the Liquid tag emits an empty string — no warning, no error.
-2. **`Gemfile` and `_config.yml` are two lists that must agree.** A plugin in only one of them is inert. Adding or removing a plugin means editing both. Repo dirs use hyphens (`al-folio-core`); gem/plugin ids use underscores (`al_folio_core`).
-3. **This repo's effective baseurl is `/al-folio`.** `_config.yml` already sets it, so a plain `bundle exec jekyll build` is correct — that is what `deploy.yml`, `broken-links-site.yml` and `axe.yml` run. Passing `--baseurl /al-folio` is redundant but harmless; blanking the baseurl out is what renders the site unstyled with broken links. Dev server is at `http://localhost:4000/al-folio/`.
-
-## Validated local command set
-
-Run from the repo root, in this order:
-
-```bash
-bundle install
-npm ci
-npm run lint:prettier
-npm run lint:style-contract
-bundle exec jekyll build --baseurl /al-folio
-bash test/integration_comments.sh
-bash test/integration_plugin_toggles.sh
-bash test/integration_distill.sh
-bash test/integration_bootstrap_compat.sh
-bash test/integration_upgrade_cli.sh
-bash test/integration_css_minify.sh
-bash test/integration_new_plugins.sh
-npx playwright install chromium webkit
-npm run test:visual
-bundle exec al-folio upgrade audit
-bundle exec al-folio upgrade overrides audit
-bundle exec al-folio upgrade report
-docker compose up -d
-curl -fsS http://127.0.0.1:8080/al-folio/ >/dev/null
-docker compose logs --tail=80
-docker compose down
-```
-
-All seven `test/integration_*.sh` scripts are gated by `unit-tests.yml`; run the ones your change touches. Docker note: v1 uses `/srv/jekyll/bin/entry_point.sh` and serves from container-local `/tmp/_site` to avoid host bind-mount write deadlocks.
-
-## Before you open a PR
-
-- Keep starter work here; route runtime behavior to the owning plugin repo.
-- Run `npm run lint:prettier` (Prettier with `@shopify/prettier-plugin-liquid`, `printWidth: 150`). `npx prettier . --write` fixes formatting.
-- Keep docs aligned with v1 ownership, and keep each fact in one place — link rather than restate.
-- If you create or keep local overrides of plugin-owned files, run `bundle exec al-folio upgrade overrides audit` and commit `.al-folio-overrides.yml` after review.
-
-## Further reading
-
-- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — how the starter and gems fit together, silent failure modes, the v1 config contract, local overrides.
-- [`docs/BOUNDARIES.md`](docs/BOUNDARIES.md) — authoritative area-to-gem ownership table and PR triage playbook.
-- [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) — contributor workflow and agent tooling.
-- [`docs/README.md`](docs/README.md) — index of all user and maintainer guides.
-- `.agents/skills/al-folio-bootstrap/SKILL.md` — new-site setup workflow.
-- `.agents/skills/al-folio-v1-migration/SKILL.md` — customized-fork migration and override drift auditing.
-- `.codex/skills` and `.claude/skills` are symlinks to `.agents/skills` for agent-specific discovery.
+Keep documentation aligned with the actual site, link to the maintained source of each procedure, and retain the MIT license and upstream attribution.
