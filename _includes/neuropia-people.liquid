@@ -17,10 +17,10 @@
     <a class="person" href="{{ profile_path | relative_url }}" aria-label="View profile of {{ member.name | escape }}">
       {% if member.image %}
         <img
-          src="{{ member.image | prepend: '/assets/img/' | relative_url }}"
+          src="{{ member.thumbnail | default: member.image | prepend: '/assets/img/' | relative_url }}"
           alt=""
-          width="{{ member.image_width }}"
-          height="{{ member.image_height }}"
+          width="330"
+          height="330"
           loading="lazy"
           decoding="async"
         >

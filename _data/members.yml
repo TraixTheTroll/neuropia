@@ -1,9 +1,10 @@
 # Current members, in the order supplied by the group.
-# Optional fields: role, bio, image (under assets/img/), email, orcid, website, linkedin.
+# Optional fields: role, bio, image, thumbnail (under assets/img/), thumbnail_focus, email, orcid, website, linkedin.
 - name: Christopher Elnan Kvistad
   initials: CK
   slug: christopher-elnan-kvistad
   image: people/cek-updated-0bbd32ac.webp
+  thumbnail: people/thumbnails/christopher-elnan-kvistad.webp
   image_width: 2560
   image_height: 2860
   role: Clinical principal investigator
@@ -13,6 +14,7 @@
   initials: TK
   slug: torbjorn-krakenes
   image: people/tk-updated-new-81335e9e.png
+  thumbnail: people/thumbnails/torbjorn-krakenes.webp
   image_width: 420
   image_height: 525
   role: Principal investigator (basic research)
@@ -22,6 +24,7 @@
   initials: MY
   slug: marie-ytterdal
   image: people/my-updated.jpg
+  thumbnail: people/thumbnails/marie-ytterdal.webp
   image_width: 400
   image_height: 400
   role: PhD candidate
@@ -31,6 +34,7 @@
   initials: CS
   slug: casper-eugen-sandvik
   image: people/ces-updated-30b407e4.jpg
+  thumbnail: people/thumbnails/casper-eugen-sandvik.webp
   image_width: 1440
   image_height: 1440
   role: PhD candidate
@@ -41,6 +45,8 @@
   initials: AG
   slug: andrea-gremes
   image: people/ag-updated.jpg
+  thumbnail: people/thumbnails/andrea-gremes.webp
+  thumbnail_focus: top
   image_width: 937
   image_height: 1280
   role: Researcher
@@ -48,6 +54,7 @@
   initials: CG
   slug: christian-gronas
   image: people/cg-updated.jpg
+  thumbnail: people/thumbnails/christian-gronas.webp
   image_width: 3072
   image_height: 3840
   role: Researcher
@@ -55,6 +62,7 @@
   initials: AMRE
   slug: anna-maria-rasmussen-eitrheim
   image: people/amre-temp.png
+  thumbnail: people/thumbnails/anna-maria-rasmussen-eitrheim.webp
   image_width: 720
   image_height: 720
   role: Master’s student
@@ -62,6 +70,8 @@
   initials: LB
   slug: lars-bo
   image: people/lb-updated.webp
+  thumbnail: people/thumbnails/lars-bo.webp
+  thumbnail_focus: top
   image_width: 770
   image_height: 962
   role: Professor
