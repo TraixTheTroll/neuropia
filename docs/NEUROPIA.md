@@ -14,6 +14,8 @@ Member profiles use About, optional Research interests, and optional Links secti
 
 The People cards use the supplied design’s circular thumbnails and open each full profile. Member pages share the animated shell and show the complete photo at its natural aspect ratio. Typography follows the supplied design, replacing the earlier bold al-folio headings.
 
+The homepage and `/people/` use separate 330 × 330 WebP thumbnails from each member’s `thumbnail` field. Full-size `image` files load on individual profiles. After changing a photo, run `ruby bin/generate_people_thumbnails.rb` with ImageMagick installed and commit the regenerated thumbnails. The default square crop is centered; `thumbnail_focus: top` keeps the upper part of Andrea Gremes’s and Lars Bø’s photos so their faces fit the circular previews. This does not crop their profile photos. If a member has no thumbnail, the directory falls back to their `image`.
+
 The shared People section displays `assets/img/people/group-photo.jpg` above the individual portraits on the homepage and `/people/`, with a “Meet the team” heading introducing the portraits. The supplied group photo keeps its full aspect ratio, uses 12-pixel rounded corners and a thin teal border, and shares the homepage logo’s teal-to-gold glow. Its gentler floating motion peaks at 4 pixels upward and 0.25 degrees of rotation over a seven-second cycle. Reduced-motion preferences disable the animation.
 
 ## Affiliations
@@ -35,6 +37,8 @@ Research themes are introduced on the homepage and in `_pages/research.md`. Keep
 The site uses `url: https://neuropia.no` and an empty `baseurl`, serving pages and assets from the domain root. Keep `CNAME` set to `neuropia.no` in the source repository so deployments preserve the custom domain. Use `relative_url` for internal links. Run `bundle exec jekyll build` with the configured base URL; local previews are at `http://localhost:4000/`. Merging changes into `main` triggers the existing GitHub Pages deployment.
 
 Use `layout: neuropia` on public pages. `_layouts/neuropia.liquid` loads the shared navigation, stylesheet, animation, canonical URL, description, favicon, and footer. Homepage content is in `_pages/about.md`; member pages retain their existing Markdown biographies. Shared People and Contact content is rendered by `_includes/neuropia-people.liquid` and `_includes/neuropia-contact.liquid`.
+
+Missing URLs display the custom 404 page with a “Return to homepage” link. The page stays visible until the visitor chooses to navigate away.
 
 The namespaced templates do not shadow gem files. Local templates are supported for this user site; the inherited upstream-only `lint:style-contract` is not applicable. Validate changes with Prettier, the production build, relevant regression/browser checks, and the al-folio upgrade and override audits.
 
