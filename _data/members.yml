@@ -61,10 +61,10 @@
 - name: Anna-Maria Rasmussen Eitrheim
   initials: AMRE
   slug: anna-maria-rasmussen-eitrheim
-  image: people/amre-temp.png
+  image: people/amre-updated-ff625e35.png
   thumbnail: people/thumbnails/anna-maria-rasmussen-eitrheim.webp
-  image_width: 720
-  image_height: 720
+  image_width: 800
+  image_height: 800
   role: Master’s student
 - name: Lars Bø
   initials: LB
